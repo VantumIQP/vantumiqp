@@ -18,10 +18,10 @@
 # superset/mcp_service/__init__.py
 
 """
-Apache Superset MCP Service
+VantumIQP MCP Service
 
-This package provides the Model Context Protocol (MCP) service for Apache Superset,
-enabling programmatic access to Superset's functionality through a standardized API.
+This package provides the Model Context Protocol (MCP) service for VantumIQP,
+enabling programmatic access to VantumIQP functionality through a standardized API.
 
 The MCP service operates as a standalone FastMCP server.
 

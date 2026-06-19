@@ -17,6 +17,7 @@
 
 from unittest.mock import MagicMock, patch
 
+from superset import config as superset_config
 from superset.themes.types import ThemeMode
 from superset.views.base import (
     _load_theme_from_model,
@@ -28,6 +29,17 @@ from superset.views.base import (
 
 class TestThemeHelpers:
     """Test theme helper functions in views/base.py"""
+
+    def test_default_config_uses_vantumiqp_branding(self):
+        """Test the default app branding values."""
+        assert superset_config.APP_NAME == "VantumIQP"
+        assert superset_config.APP_ICON == "/static/assets/images/vantumiqp_logo.png"
+        assert superset_config.LOGO_RIGHT_TEXT == "VantumIQP"
+        assert superset_config.THEME_DEFAULT["token"]["brandLogoAlt"] == "VantumIQP"
+        assert (
+            superset_config.THEME_DEFAULT["token"]["brandSpinnerUrl"]
+            == "/static/assets/images/vantumiqp_loader.svg"
+        )
 
     def test_merge_theme_dicts_simple(self):
         """Test merging simple theme dictionaries"""

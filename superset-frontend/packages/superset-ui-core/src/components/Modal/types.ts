@@ -22,6 +22,12 @@ import type { ResizableProps } from 're-resizable';
 import type { DraggableProps } from 'react-draggable';
 import { ButtonStyle } from '../Button/types';
 
+type DefinedProps<T> = {
+  [Property in keyof T]?: Exclude<T[Property], undefined>;
+};
+
+type DraggableConfig = DefinedProps<DraggableProps>;
+
 export interface ModalProps {
   className?: string;
   children: ReactNode;
@@ -47,7 +53,7 @@ export interface ModalProps {
   resizable?: boolean;
   resizableConfig?: ResizableProps;
   draggable?: boolean;
-  draggableConfig?: DraggableProps;
+  draggableConfig?: DraggableConfig;
   destroyOnHidden?: boolean;
   maskClosable?: boolean;
   zIndex?: number;

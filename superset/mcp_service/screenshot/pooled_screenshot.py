@@ -157,7 +157,7 @@ class PooledChartScreenshot(PooledBaseScreenshot):
         self.thumb_size = thumb_size or (400, 300)
 
     def _take_screenshot(self, driver: Any, user: User) -> bytes | None:
-        """Take screenshot of chart with standard Superset chart handling"""
+        """Take screenshot of chart with standard VantumIQP chart handling"""
         try:
             # Wait for page to load
             selenium_headstart = current_app.config["SCREENSHOT_SELENIUM_HEADSTART"]
@@ -413,7 +413,7 @@ class PooledDashboardScreenshot(PooledBaseScreenshot):
         self.thumb_size = thumb_size or (800, 600)
 
     def _take_screenshot(self, driver: Any, user: User) -> bytes | None:
-        """Take screenshot of dashboard with standard Superset dashboard handling"""
+        """Take screenshot of dashboard with standard VantumIQP dashboard handling"""
         try:
             # Wait for page to load
             selenium_headstart = current_app.config["SCREENSHOT_SELENIUM_HEADSTART"]

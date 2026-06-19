@@ -13,13 +13,13 @@
 # KIND, either express or implied.  See the License for the
 # specific language governing permissions and limitations
 # under the License.
-# Persian translations for Superset.
-# Copyright (C) 2024 Superset
-# This file is distributed under the same license as the Superset project.
+# Persian translations for VantumIQP.
+# Copyright (C) 2024 VantumIQP
+# This file is distributed under the same license as the VantumIQP project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
 msgid ""
 msgstr ""
-"Project-Id-Version: Superset VERSION\n"
+"Project-Id-Version: VantumIQP VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2026-02-06 23:58-0800\n"
 "PO-Revision-Date: 2024-10-20 00:07+0330\n"
@@ -121,8 +121,8 @@ msgstr "جزئیات"
 msgid " near '%(highlight)s'"
 msgstr " نزدیک '%(highlight)ها'"
 
-msgid " source code of Superset's sandboxed parser"
-msgstr "کد منبع تجزیه‌کننده‌ی محافظت‌شده‌ی Superset"
+msgid " source code of VantumIQP's sandboxed parser"
+msgstr "کد منبع تجزیه‌کننده‌ی محافظت‌شده‌ی VantumIQP"
 
 msgid ""
 " standard to ensure that the lexicographical ordering\n"
@@ -395,7 +395,7 @@ msgid ""
 "\n"
 "%(description)s\n"
 "\n"
-"<%(url)s|Explore in Superset>\n"
+"<%(url)s|Explore in VantumIQP>\n"
 "\n"
 "%(table)s\n"
 msgstr ""
@@ -2044,7 +2044,7 @@ msgstr "ستون‌ها را سفارشی‌سازی کنید"
 msgid "Autosize all columns"
 msgstr "ستون‌ها را سفارشی‌سازی کنید"
 
-msgid "Available Handlebars Helpers in Superset:"
+msgid "Available Handlebars Helpers in VantumIQP:"
 msgstr ""
 
 msgid "Available sorting modes:"
@@ -4151,11 +4151,11 @@ msgid "Database does not support subqueries"
 msgstr "پایگاه‌داده از زیرکوئریها پشتیبانی نمی‌کند."
 
 msgid ""
-"Database driver for importing maybe not installed. Visit the Superset "
+"Database driver for importing maybe not installed. Visit the VantumIQP "
 "documentation page for installation instructions: "
 msgstr ""
 "درایور پایگاه داده برای وارد کردن ممکن است نصب نشده باشد. برای "
-"دستورالعمل‌های نصب به صفحه مستندات Superset مراجعه کنید:"
+"دستورالعمل‌های نصب به صفحه مستندات VantumIQP مراجعه کنید:"
 
 msgid "Database error"
 msgstr "خطای پایگاه داده"
@@ -9376,8 +9376,8 @@ msgstr "یک معیار برای نمایش انتخاب کنید"
 msgid "Pick a name to help you identify this database."
 msgstr "یک نام انتخاب کنید تا به شما در شناسایی این پایگاه داده کمک کند."
 
-msgid "Pick a nickname for how the database will display in Superset."
-msgstr "یک نام مستعار برای نحوه نمایش پایگاه داده در Superset انتخاب کنید."
+msgid "Pick a nickname for how the database will display in VantumIQP."
+msgstr "یک نام مستعار برای نحوه نمایش پایگاه داده در VantumIQP انتخاب کنید."
 
 msgid "Pick a title for you annotation."
 msgstr "یک عنوان برای یادداشت خود انتخاب کنید."
@@ -9665,7 +9665,7 @@ msgstr "موقعیت برچسب گره میانی در درخت"
 msgid "Position of row level subtotal"
 msgstr "موقعیت جمع جزئی ردیف"
 
-msgid "Powered by Apache Superset"
+msgid "Powered by VantumIQP"
 msgstr "قدرت گرفته از آپاچی سوپرست"
 
 msgid "Pre-filter"
@@ -12161,23 +12161,23 @@ msgstr "نمودار خورشیدی"
 msgid "Sunday"
 msgstr "یکشنبه"
 
-msgid "Superset Chart"
+msgid "VantumIQP Chart"
 msgstr "چارت سوپرست"
 
-msgid "Superset Embedded SDK documentation."
-msgstr "مستندات SDK جاسازی شده Superset."
+msgid "VantumIQP Embedded SDK documentation."
+msgstr "مستندات SDK جاسازی شده VantumIQP."
 
-msgid "Superset chart"
+msgid "VantumIQP chart"
 msgstr "چارت سوپرست"
 
 #, fuzzy
-msgid "Superset docs link"
+msgid "VantumIQP docs link"
 msgstr "چارت سوپرست"
 
-msgid "Superset encountered an error while running a command."
+msgid "VantumIQP encountered an error while running a command."
 msgstr "سوپرسِت در حین اجرای یک دستور با خطا مواجه شد."
 
-msgid "Superset encountered an unexpected error."
+msgid "VantumIQP encountered an unexpected error."
 msgstr "سوپرسِت با یک خطای غیرمنتظره مواجه شد."
 
 msgid "Supported databases"
@@ -12594,7 +12594,7 @@ msgid "The corner radius of the chart background"
 msgstr ""
 
 msgid ""
-"The country code standard that Superset should expect to find in the "
+"The country code standard that VantumIQP should expect to find in the "
 "[country] column"
 msgstr "استاندارد کد کشور که سوپرسِت باید در ستون [کشور] انتظار داشته باشد"
 
@@ -13022,7 +13022,7 @@ msgstr "شعاع پیکسل"
 
 msgid ""
 "The pointer to a physical table (or view). Keep in mind that the chart is"
-" associated to this Superset logical table, and this logical table points"
+" associated to this VantumIQP logical table, and this logical table points"
 " the physical table referenced here."
 msgstr ""
 "یک اشاره‌گر به یک جدول (یا نمای) فیزیکی. به یاد داشته باشید که نمودار به "
@@ -13250,11 +13250,11 @@ msgid ""
 "The time granularity for the visualization. This applies a date "
 "transformation to alter your time column and defines a new time "
 "granularity. The options here are defined on a per database engine basis "
-"in the Superset source code."
+"in the VantumIQP source code."
 msgstr ""
 "دقت زمانی برای تجسم. این یک تبدیل تاریخ را برای تغییر ستون زمان شما اعمال"
 " می‌کند و یک دقت زمانی جدید تعریف می‌کند. گزینه‌های موجود در اینجا بر "
-"اساس موتور پایگاه داده به صورت جداگانه در کد منبع Superset تعریف شده‌اند."
+"اساس موتور پایگاه داده به صورت جداگانه در کد منبع VantumIQP تعریف شده‌اند."
 
 msgid ""
 "The time range for the visualization. All relative times, e.g. \"Last "
@@ -13666,7 +13666,7 @@ msgstr ""
 msgid "This chart has been moved to a different filter scope."
 msgstr "این نمودار به دامنه فیلتر دیگری منتقل شده است."
 
-msgid "This chart is managed externally, and can't be edited in Superset"
+msgid "This chart is managed externally, and can't be edited in VantumIQP"
 msgstr ""
 "این نمودار به صورت خارجی مدیریت می‌شود و نمی‌توان آن را در سوپرسِت ویرایش"
 " کرد."
@@ -13729,9 +13729,9 @@ msgstr ""
 "این داشبورد در حال حاضر به صورت خودکار در حال به‌روز رسانی است؛ "
 "به‌روزرسانی خودکار بعدی در %s خواهد بود."
 
-msgid "This dashboard is managed externally, and can't be edited in Superset"
+msgid "This dashboard is managed externally, and can't be edited in VantumIQP"
 msgstr ""
-"این داشبورد به صورت خارجی مدیریت می‌شود و نمی‌توان آن را در Superset "
+"این داشبورد به صورت خارجی مدیریت می‌شود و نمی‌توان آن را در VantumIQP "
 "ویرایش کرد."
 
 msgid ""
@@ -13777,9 +13777,9 @@ msgstr ""
 "پایگاه داده‌ای که در این کوئری به آن اشاره شده است پیدا نشد. لطفاً برای "
 "کمک بیشتر با یک مدیر تماس بگیرید یا دوباره تلاش کنید."
 
-msgid "This database is managed externally, and can't be edited in Superset"
+msgid "This database is managed externally, and can't be edited in VantumIQP"
 msgstr ""
-"این پایگاه داده به صورت خارجی مدیریت می‌شود و نمی‌توان آن را در Superset "
+"این پایگاه داده به صورت خارجی مدیریت می‌شود و نمی‌توان آن را در VantumIQP "
 "ویرایش کرد."
 
 msgid ""
@@ -13789,9 +13789,9 @@ msgstr ""
 "این جدول پایگاه داده حاوی هیچ داده‌ای نیست. لطفاً جدول دیگری را انتخاب "
 "کنید."
 
-msgid "This dataset is managed externally, and can't be edited in Superset"
+msgid "This dataset is managed externally, and can't be edited in VantumIQP"
 msgstr ""
-"این مجموعه داده به صورت خارجی مدیریت می‌شود و نمی‌توان آن را در Superset "
+"این مجموعه داده به صورت خارجی مدیریت می‌شود و نمی‌توان آن را در VantumIQP "
 "ویرایش کرد."
 
 msgid "This defines the element to be plotted on the chart"
@@ -14483,24 +14483,24 @@ msgid "Unable to load dashboard"
 msgstr "قادر به بارگذاری داشبورد نیستید"
 
 msgid ""
-"Unable to migrate query editor state to backend. Superset will retry "
+"Unable to migrate query editor state to backend. VantumIQP will retry "
 "later. Please contact your administrator if this problem persists."
 msgstr ""
 "نمی‌توان وضعیت ویرایشگر کوئری را به سرور منتقل کرد. سوپرسِت بعداً تلاش "
 "خواهد کرد. لطفاً اگر این مشکل ادامه داشت با مدیر سیستم خود تماس بگیرید."
 
 msgid ""
-"Unable to migrate query state to backend. Superset will retry later. "
+"Unable to migrate query state to backend. VantumIQP will retry later. "
 "Please contact your administrator if this problem persists."
 msgstr ""
-"عدم توانایی در انتقال وضعیت کوئری به سرور. Superset بعداً تلاش خواهد کرد."
+"عدم توانایی در انتقال وضعیت کوئری به سرور. VantumIQP بعداً تلاش خواهد کرد."
 " لطفاً در صورت ادامه‌ی این مشکل با مدیر خود تماس بگیرید."
 
 msgid ""
-"Unable to migrate table schema state to backend. Superset will retry "
+"Unable to migrate table schema state to backend. VantumIQP will retry "
 "later. Please contact your administrator if this problem persists."
 msgstr ""
-"نمی‌توان وضعیت ساختار جدول را به backend منتقل کرد. Superset بعداً دوباره"
+"نمی‌توان وضعیت ساختار جدول را به backend منتقل کرد. VantumIQP بعداً دوباره"
 " تلاش خواهد کرد. لطفاً در صورت ادامه این مشکل با مدیر خود تماس بگیرید."
 
 msgid "Unable to parse SQL"
@@ -15332,7 +15332,7 @@ msgstr ""
 
 #, fuzzy
 msgid ""
-"When specifying SQL, the datasource acts as a view. Superset will use "
+"When specifying SQL, the datasource acts as a view. VantumIQP will use "
 "this statement as a subquery while grouping and filtering on the "
 "generated parent queries.If changes are made to your SQL query, columns "
 "in your dataset will be synced when saving the dataset."

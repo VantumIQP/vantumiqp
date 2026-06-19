@@ -16,7 +16,7 @@
 # under the License.
 
 """
-Centralized version metadata utilities for Apache Superset.
+Centralized version metadata utilities for VantumIQP.
 """
 
 import os

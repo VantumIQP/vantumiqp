@@ -42,7 +42,7 @@ export const InteractiveIconButton: Story = {
     buttonText: 'IconButton',
     altText: 'Icon button alt text',
     padded: true,
-    icon: 'https://superset.apache.org/img/superset-logo-horiz.svg',
+    icon: '/static/assets/images/vantumiqp_logo.png',
   },
   argTypes: {
     altText: {
@@ -83,8 +83,8 @@ export const InteractiveIconButton: Story = {
       liveExample: `function Demo() {
   return (
     <IconButton
-      buttonText="Superset"
-      icon="https://superset.apache.org/img/superset-logo-horiz.svg"
+      buttonText="VantumIQP"
+      icon="/static/assets/images/vantumiqp_logo.png"
       padded
       onClick={() => alert('Clicked!')}
     />
@@ -103,6 +103,6 @@ export const Default: Story = {
 export const CustomIcon: Story = {
   args: {
     buttonText: 'Custom icon IconButton',
-    icon: 'https://superset.apache.org/img/superset-logo-horiz.svg',
+    icon: '/static/assets/images/vantumiqp_logo.png',
   },
 };

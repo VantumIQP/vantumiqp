@@ -81,25 +81,25 @@ const features = [
     image: 'powerful-yet-easy.jpg',
     title: 'Powerful yet easy to use',
     description:
-      'Superset makes it easy to explore your data, using either our simple no-code viz builder or state-of-the-art SQL IDE.',
+      'VantumIQP makes it easy to explore your data, using either our simple no-code viz builder or state-of-the-art SQL IDE.',
   },
   {
     image: 'modern-databases.jpg',
     title: 'Integrates with modern databases',
     description:
-      'Superset can connect to any SQL-based databases including modern cloud-native databases and engines at petabyte scale.',
+      'VantumIQP can connect to any SQL-based databases including modern cloud-native databases and engines at petabyte scale.',
   },
   {
     image: 'modern-architecture.jpg',
     title: 'Modern architecture',
     description:
-      'Superset is lightweight and highly scalable, leveraging the power of your existing data infrastructure without requiring yet another ingestion layer.',
+      'VantumIQP is lightweight and highly scalable, leveraging the power of your existing data infrastructure without requiring yet another ingestion layer.',
   },
   {
     image: 'rich-visualizations.jpg',
     title: 'Rich visualizations and dashboards',
     description:
-      'Superset ships with 40+ pre-installed visualization types. Our plug-in architecture makes it easy to build custom visualizations.',
+      'VantumIQP ships with 40+ pre-installed visualization types. Our plug-in architecture makes it easy to build custom visualizations.',
   },
 ];
 
@@ -115,7 +115,7 @@ const docSections = [
   {
     title: 'Administrator Guide',
     description:
-      'For teams installing and operating Superset. Covers installation, configuration, security, and database drivers.',
+      'For teams installing and operating VantumIQP. Covers installation, configuration, security, and database drivers.',
     cta: 'Browse Admin Docs',
     href: '/admin-docs/',
     accent: '#457f8d',
@@ -123,7 +123,7 @@ const docSections = [
   {
     title: 'Developer Guide',
     description:
-      'For contributors and engineers building on Superset. Covers the REST API, extensions, and contributing workflows.',
+      'For contributors and engineers building on VantumIQP. Covers the REST API, extensions, and contributing workflows.',
     cta: 'Browse Developer Docs',
     href: '/developer-docs/',
     accent: '#2d6a4f',
@@ -131,7 +131,7 @@ const docSections = [
   {
     title: 'Community',
     description:
-      'Join the Superset community. Find resources on Slack, GitHub, the mailing list, and upcoming meetups.',
+      'Join the VantumIQP community. Find resources on Slack, GitHub, the mailing list, and upcoming meetups.',
     cta: 'Join the Community',
     href: '/community',
     accent: '#6d4c7e',
@@ -620,7 +620,7 @@ export default function Home(): JSX.Element {
       navbar.classList.add('navbar--dark');
     }
     if (logo) {
-      logo.setAttribute('src', '/img/superset-logo-horiz-dark.svg');
+      logo.setAttribute('src', '/img/vantumiqp-logo.png');
     }
   };
 
@@ -631,7 +631,7 @@ export default function Home(): JSX.Element {
       navbar.classList.remove('navbar--dark');
     }
     if (logo) {
-      logo.setAttribute('src', '/img/superset-logo-horiz.svg');
+      logo.setAttribute('src', '/img/vantumiqp-logo.png');
     }
   };
 
@@ -668,7 +668,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title="Welcome"
-      description="Community website for Apache Superset™, a data visualization and data exploration platform"
+      description="Community website for VantumIQP™, a data visualization and data exploration platform"
       wrapperClassName="under-navbar"
     >
       <StyledMain>
@@ -676,12 +676,12 @@ export default function Home(): JSX.Element {
           <div className="info-container">
             <img
               className="superset-mark"
-              src="/img/superset-mark-dark.svg"
-              alt="Superset mark"
+              src="/img/vantumiqp-logo.png"
+              alt="VantumIQP mark"
             />
             <div className="info-text">
-              Apache Superset&trade; is an open-source modern data exploration
-              and visualization platform.
+              VantumIQP is a modern data exploration and visualization
+              platform.
             </div>
             <img src="/img/community/line.png" alt="line" />
             <div className="github-section">
@@ -754,7 +754,7 @@ export default function Home(): JSX.Element {
           <SectionHeader
             level="h2"
             title="Overview"
-            subtitle="Superset is fast, lightweight, intuitive, and loaded with options that make it easy for users of all skill sets to explore and visualize their data, from simple line charts to highly detailed geospatial charts."
+            subtitle="VantumIQP is fast, lightweight, intuitive, and loaded with options that make it easy for users of all skill sets to explore and visualize their data, from simple line charts to highly detailed geospatial charts."
           />
           <StyledFeaturesList>
             {features.map(({ image, title, description }) => (
@@ -929,7 +929,7 @@ export default function Home(): JSX.Element {
               <SectionHeader
                 level="h2"
                 title="Trusted by teams everywhere"
-                subtitle="Join thousands of companies using Superset to explore and visualize their data"
+                subtitle="Join thousands of companies using VantumIQP to explore and visualize their data"
               />
               <div style={{ maxWidth: 1160, margin: '25px auto 0' }}>
                 <Carousel

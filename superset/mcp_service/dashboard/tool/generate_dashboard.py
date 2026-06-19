@@ -57,7 +57,7 @@ def _create_dashboard_layout(chart_objects: List[Any]) -> Dict[str, Any]:
     """
     layout: Dict[str, Any] = {}
 
-    # Grid configuration based on real Superset dashboard patterns
+    # Grid configuration based on real VantumIQP dashboard patterns
     # Use 2-chart rows with medium-sized charts (like existing dashboards)
     charts_per_row = 2
     chart_width = GRID_DEFAULT_CHART_WIDTH

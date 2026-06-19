@@ -30,7 +30,7 @@ from werkzeug.security import check_password_hash
     "--silent",
     is_flag=True,
     prompt=(
-        "Are you sure you want to reset Superset? "
+        "Are you sure you want to reset VantumIQP? "
         "This action cannot be undone. Continue?"
     ),
     help="Confirmation flag",
@@ -48,7 +48,7 @@ from werkzeug.security import check_password_hash
 def factory_reset(
     username: str, silent: bool, exclude_users: str, exclude_roles: str
 ) -> None:
-    """Factory Reset Apache Superset"""
+    """Factory Reset VantumIQP"""
 
     # Check feature flag inside the command
     if not current_app.config.get("FEATURE_FLAGS", {}).get(

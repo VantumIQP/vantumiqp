@@ -289,7 +289,7 @@ export const useExploreAdditionalActionsMenu = (
 
   const shareByEmail = useCallback(async () => {
     try {
-      const subject = t('Superset Chart');
+      const subject = t('VantumIQP Chart');
       if (!latestQueryFormData?.datasource) {
         throw new Error('No datasource available');
       }

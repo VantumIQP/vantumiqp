@@ -352,10 +352,10 @@ AUTH_RATE_LIMIT = "5 per second"
 # GLOBALS FOR APP Builder
 # ------------------------------
 # Uncomment to setup Your App name
-APP_NAME = "Superset"
+APP_NAME = "VantumIQP"
 
 # Specify the App icon
-APP_ICON = "/static/assets/images/superset-logo-horiz.png"
+APP_ICON = "/static/assets/images/vantumiqp_logo.png"
 
 # Specify where clicking the logo would take the user'
 # Default value of None will take you to '/superset/welcome'
@@ -364,10 +364,10 @@ APP_ICON = "/static/assets/images/superset-logo-horiz.png"
 LOGO_TARGET_PATH = None
 
 # Specify tooltip that should appear when hovering over the App Icon/Logo
-LOGO_TOOLTIP = ""
+LOGO_TOOLTIP = "VantumIQP"
 
 # Specify any text that should appear to the right of the logo
-LOGO_RIGHT_TEXT: Callable[[], str] | str = ""
+LOGO_RIGHT_TEXT: Callable[[], str] | str = "VantumIQP"
 
 # Enables SWAGGER UI for superset openapi spec
 # ex: http://localhost:8080/swagger/v1
@@ -923,13 +923,13 @@ THEME_DEFAULT: Theme = {
         # Brand
         # Application name for window titles
         "brandAppName": APP_NAME,
-        "brandLogoAlt": "Apache Superset",
+        "brandLogoAlt": "VantumIQP",
         "brandLogoUrl": APP_ICON,
-        "brandLogoMargin": "18px 0",
+        "brandLogoMargin": "12px 0",
         "brandLogoHref": "/",
-        "brandLogoHeight": "24px",
+        "brandLogoHeight": "32px",
         # Spinner
-        "brandSpinnerUrl": None,
+        "brandSpinnerUrl": "/static/assets/images/vantumiqp_loader.svg",
         "brandSpinnerSvg": None,
         # Default colors
         "colorPrimary": "#2893B3",  # NOTE: previous lighter primary color was #20a7c9 # noqa: E501
@@ -1978,7 +1978,7 @@ ALERT_REPORTS_WEBHOOK_HTTPS_ONLY = True
 EMAIL_REPORTS_SUBJECT_PREFIX = "[Report] "
 
 # The text for call-to-action link in Alerts & Reports emails
-EMAIL_REPORTS_CTA = "Explore in Superset"
+EMAIL_REPORTS_CTA = "Explore in VantumIQP"
 
 # Slack API token for the superset reports, either string or callable
 SLACK_API_TOKEN: Callable[[], str] | str | None = None

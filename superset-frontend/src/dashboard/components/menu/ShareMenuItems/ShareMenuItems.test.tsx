@@ -27,7 +27,7 @@ import {
 import * as copyTextToClipboard from 'src/utils/copy';
 import fetchMock from 'fetch-mock';
 import { ComponentProps } from 'react';
-import { useShareMenuItems, ShareMenuItemProps } from '.';
+import { buildEmailShareHref, useShareMenuItems, ShareMenuItemProps } from '.';
 
 const spy = jest.spyOn(copyTextToClipboard, 'default');
 
@@ -38,7 +38,7 @@ const createProps = () => ({
   url: `/superset/dashboard/${DASHBOARD_ID}`,
   copyMenuItemTitle: 'Copy dashboard URL',
   emailMenuItemTitle: 'Share dashboard by email',
-  emailSubject: 'Superset dashboard COVID Vaccine Dashboard',
+  emailSubject: 'VantumIQP dashboard COVID Vaccine Dashboard',
   emailBody: 'Check out this dashboard: ',
   dashboardId: DASHBOARD_ID,
   title: 'Test Dashboard',
@@ -89,6 +89,19 @@ test('Should render menu items', () => {
   );
   expect(screen.getByText('Copy dashboard URL')).toBeInTheDocument();
   expect(screen.getByText('Share dashboard by email')).toBeInTheDocument();
+});
+
+test('builds VantumIQP email share href', () => {
+  const props = createProps();
+  expect(
+    buildEmailShareHref({
+      emailSubject: props.emailSubject,
+      emailBody: props.emailBody,
+      url: 'http://localhost/superset/dashboard/p/123/',
+    }),
+  ).toBe(
+    'mailto:?Subject=VantumIQP%20dashboard%20COVID%20Vaccine%20Dashboard%20&Body=Check%20out%20this%20dashboard%3A%20http%3A%2F%2Flocalhost%2Fsuperset%2Fdashboard%2Fp%2F123%2F',
+  );
 });
 
 test('Click on "Copy dashboard URL" and succeed', async () => {
@@ -159,6 +172,7 @@ test('Click on "Copy dashboard URL" and fail', async () => {
 
 test('Click on "Share dashboard by email" and succeed', async () => {
   const props = createProps();
+  const initialLocation = window.location.href;
   render(
     <MenuWrapper
       onClick={jest.fn()}
@@ -172,16 +186,17 @@ test('Click on "Share dashboard by email" and succeed', async () => {
 
   await waitFor(() => {
     expect(props.addDangerToast).toHaveBeenCalledTimes(0);
-    expect(window.location.href).toBe('');
+    expect(window.location.href).toBe(initialLocation);
   });
 
   await userEvent.click(screen.getByText('Share dashboard by email'));
 
   await waitFor(() => {
     expect(props.addDangerToast).toHaveBeenCalledTimes(0);
-    expect(window.location.href).toBe(
-      'mailto:?Subject=Superset%20dashboard%20COVID%20Vaccine%20Dashboard%20&Body=Check%20out%20this%20dashboard%3A%20http%3A%2F%2Flocalhost%2Fsuperset%2Fdashboard%2Fp%2F123%2F',
-    );
+    expect(
+      fetchMock.callHistory.calls(postDashboardPermalinkMockUrl),
+    ).toHaveLength(1);
+    expect(window.location.href).toBe(initialLocation);
   });
 });
 
@@ -189,6 +204,7 @@ test('Click on "Share dashboard by email" and fail', async () => {
   fetchMock.removeRoute(postDashboardPermalinkMockUrl);
   fetchMock.post(postDashboardPermalinkMockUrl, { status: 404 });
   const props = createProps();
+  const initialLocation = window.location.href;
   render(
     <MenuWrapper
       onClick={jest.fn()}
@@ -202,13 +218,13 @@ test('Click on "Share dashboard by email" and fail', async () => {
 
   await waitFor(() => {
     expect(props.addDangerToast).toHaveBeenCalledTimes(0);
-    expect(window.location.href).toBe('');
+    expect(window.location.href).toBe(initialLocation);
   });
 
   await userEvent.click(screen.getByText('Share dashboard by email'));
 
   await waitFor(() => {
-    expect(window.location.href).toBe('');
+    expect(window.location.href).toBe(initialLocation);
     expect(props.addDangerToast).toHaveBeenCalledTimes(1);
     expect(props.addDangerToast).toHaveBeenCalledWith(
       'Sorry, something went wrong. Try again later.',

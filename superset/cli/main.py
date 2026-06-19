@@ -59,7 +59,7 @@ def create_app() -> Any:
 )
 @with_appcontext
 def superset() -> None:
-    """\033[1;37mThe Apache Superset CLI\033[0m"""
+    """\033[1;37mThe VantumIQP CLI\033[0m"""
     # NOTE: codes above are ANSI color codes for bold white in CLI header ^^^
 
 
@@ -80,7 +80,7 @@ for load, module_name, is_pkg in pkgutil.walk_packages(  # noqa: B007
 @with_appcontext
 @transaction()
 def init() -> None:
-    """Inits the Superset application"""
+    """Inits the VantumIQP application"""
     appbuilder.add_permissions(update_perms=True)
     security_manager.sync_role_definitions()
 
@@ -94,7 +94,7 @@ def version(verbose: bool) -> None:
     print(Fore.BLUE + "-=" * 15)
     print(
         Fore.YELLOW
-        + "Superset "
+        + "VantumIQP "
         + Fore.CYAN
         + f"{current_app.config['VERSION_STRING']}"
     )

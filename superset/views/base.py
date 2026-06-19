@@ -290,8 +290,11 @@ def menu_data(user: User) -> dict[str, Any]:
         },
         "environment_tag": get_environment_tag(),
         "navbar_right": {
-            # show the watermark if the default app icon has been overridden
-            "show_watermark": ("superset-logo-horiz" not in appbuilder.app_icon),
+            # Show the watermark if the default product icon has been overridden.
+            "show_watermark": (
+                "superset-logo-horiz" not in appbuilder.app_icon
+                and "vantumiqp_logo" not in appbuilder.app_icon
+            ),
             "bug_report_url": app.config["BUG_REPORT_URL"],
             "bug_report_icon": app.config["BUG_REPORT_ICON"],
             "bug_report_text": app.config["BUG_REPORT_TEXT"],
@@ -578,9 +581,10 @@ def get_spa_template_context(
     default_theme = theme_data.get("default", {})
     dark_theme = theme_data.get("dark", {})
 
-    # Apply brandAppName fallback to both default and dark themes
-    # Priority: theme brandAppName > APP_NAME config > "Superset" default
-    app_name_from_config = app.config.get("APP_NAME", "Superset")
+    # Apply brandAppName fallback to both default and dark themes.
+    # Priority: theme brandAppName > APP_NAME config > product default.
+    app_name_from_config = app.config.get("APP_NAME", "VantumIQP")
+    default_brand_names = {"Superset", "VantumIQP"}
     for theme_config in [default_theme, dark_theme]:
         if not theme_config:
             continue
@@ -591,11 +595,12 @@ def get_spa_template_context(
 
         if (
             not theme_tokens.get("brandAppName")
-            or theme_tokens.get("brandAppName") == "Superset"
+            or theme_tokens.get("brandAppName") in default_brand_names
         ):
-            # If brandAppName not set or is default, check if APP_NAME customized
-            if app_name_from_config != "Superset":
+            if app_name_from_config not in default_brand_names:
                 # User has customized APP_NAME, use it as brandAppName
+                theme_tokens["brandAppName"] = app_name_from_config
+            else:
                 theme_tokens["brandAppName"] = app_name_from_config
 
     # Write the modified theme data back to payload
@@ -617,7 +622,7 @@ def get_spa_template_context(
         spinner_svg = get_default_spinner_svg()
 
     # Determine default title using the (potentially updated) brandAppName
-    default_title = theme_tokens.get("brandAppName", "Superset")
+    default_title = theme_tokens.get("brandAppName", "VantumIQP")
 
     # Extract dark theme background for the initial page load CSS.
     dark_theme_tokens = dark_theme.get("token", {}) if dark_theme else {}

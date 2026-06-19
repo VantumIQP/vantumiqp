@@ -1,6 +1,6 @@
 {
-  "name": "Apache Superset",
-  "short_name": "Superset",
+  "name": "VantumIQP",
+  "short_name": "VantumIQP",
   "description": "Modern data exploration and visualization platform",
   "start_url": "/superset/welcome/",
   "scope": "/",
@@ -39,14 +39,14 @@
       "sizes": "1280x720",
       "type": "image/png",
       "form_factor": "wide",
-      "label": "Apache Superset Dashboard"
+      "label": "VantumIQP Dashboard"
     },
     {
       "src": "/static/assets/images/pwa/screenshot-narrow.png",
       "sizes": "540x720",
       "type": "image/png",
       "form_factor": "narrow",
-      "label": "Apache Superset Mobile View"
+      "label": "VantumIQP Mobile View"
     }
   ],
   "file_handlers": [

@@ -16,5 +16,5 @@
 # under the License.
 
 """
-Apache Superset Core - Public API with core functions of Superset
+VantumIQP Core - Public API with core functions
 """

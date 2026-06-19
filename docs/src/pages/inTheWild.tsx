@@ -68,13 +68,13 @@ const ContributorAvatars = ({ contributors }: { contributors?: string[] }) => {
 
 export default function InTheWild() {
   return (
-    <Layout title="In the Wild" description="Organizations using Apache Superset">
+    <Layout title="In the Wild" description="Organizations using VantumIQP">
       <main>
         <BlurredSection>
           <SectionHeader
             level="h2"
             title="In the Wild"
-            subtitle="See who's using Superset and join our growing community"
+            subtitle="See who's using VantumIQP and join our growing community"
           />
           <div style={{ textAlign: 'center', marginTop: 10 }}>
             <Link

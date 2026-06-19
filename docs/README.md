@@ -17,14 +17,14 @@ specific language governing permissions and limitations
 under the License.
 -->
 
-This is the public documentation site for Superset, built using
+This is the public documentation site for VantumIQP, built using
 [Docusaurus 3](https://docusaurus.io/). See the
 [Developer Docs](https://superset.apache.org/developer-docs/contributing/development-setup#documentation)
 for documentation on contributing to documentation.
 
 ## Version Management
 
-The Superset documentation site uses Docusaurus versioning with four independent sections:
+The VantumIQP documentation site uses Docusaurus versioning with four independent sections:
 
 - **User Documentation** (`/user-docs/`) - End-user guides and tutorials
 - **Admin Documentation** (`/admin-docs/`) - Installation, configuration, and security

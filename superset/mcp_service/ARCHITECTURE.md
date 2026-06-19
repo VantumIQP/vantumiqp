@@ -21,7 +21,7 @@ under the License.
 
 ## Overview
 
-The Apache Superset MCP (Model Context Protocol) service provides programmatic access to Superset functionality through a standardized protocol that enables AI assistants and automation tools to interact with dashboards, charts, datasets, and SQL Lab.
+The VantumIQP MCP (Model Context Protocol) service provides programmatic access to VantumIQP functionality through a standardized protocol that enables AI assistants and automation tools to interact with dashboards, charts, datasets, and SQL Lab.
 
 The MCP service runs as a **separate process** from the Superset web server, using its own Flask application instance and HTTP server while sharing the same database and configuration with the main Superset application.
 

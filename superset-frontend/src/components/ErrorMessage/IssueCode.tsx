@@ -34,7 +34,7 @@ export function IssueCode({ code, message }: IssueCodeProps) {
         href={`https://superset.apache.org/docs/using-superset/issue-codes#issue-${code}`}
         rel="noopener noreferrer"
         target="_blank"
-        aria-label={t('Superset docs link')}
+        aria-label={t('VantumIQP docs link')}
       >
         <Icons.Full iconSize="m" iconColor={theme.colorPrimary} />
       </a>

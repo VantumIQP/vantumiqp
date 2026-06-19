@@ -103,7 +103,7 @@ msgstr ""
 msgid " near '%(highlight)s'"
 msgstr ""
 
-msgid " source code of Superset's sandboxed parser"
+msgid " source code of VantumIQP's sandboxed parser"
 msgstr ""
 
 msgid ""
@@ -354,7 +354,7 @@ msgid ""
 "\n"
 "%(description)s\n"
 "\n"
-"<%(url)s|Explore in Superset>\n"
+"<%(url)s|Explore in VantumIQP>\n"
 "\n"
 "%(table)s\n"
 msgstr ""
@@ -2033,7 +2033,7 @@ msgstr "Cláusula WHERE personalizada"
 msgid "Autosize all columns"
 msgstr "Cláusula WHERE personalizada"
 
-msgid "Available Handlebars Helpers in Superset:"
+msgid "Available Handlebars Helpers in VantumIQP:"
 msgstr ""
 
 msgid "Available sorting modes:"
@@ -4182,7 +4182,7 @@ msgid "Database does not support subqueries"
 msgstr "Origem de dados %(name)s já existe"
 
 msgid ""
-"Database driver for importing maybe not installed. Visit the Superset "
+"Database driver for importing maybe not installed. Visit the VantumIQP "
 "documentation page for installation instructions: "
 msgstr ""
 
@@ -9480,7 +9480,7 @@ msgstr "Selecione uma métrica para visualizar"
 msgid "Pick a name to help you identify this database."
 msgstr ""
 
-msgid "Pick a nickname for how the database will display in Superset."
+msgid "Pick a nickname for how the database will display in VantumIQP."
 msgstr ""
 
 msgid "Pick a title for you annotation."
@@ -9755,7 +9755,7 @@ msgstr ""
 msgid "Position of row level subtotal"
 msgstr ""
 
-msgid "Powered by Apache Superset"
+msgid "Powered by VantumIQP"
 msgstr ""
 
 #, fuzzy
@@ -12333,23 +12333,23 @@ msgid "Sunday"
 msgstr ""
 
 #, fuzzy
-msgid "Superset Chart"
+msgid "VantumIQP Chart"
 msgstr "Explorar gráfico"
 
-msgid "Superset Embedded SDK documentation."
+msgid "VantumIQP Embedded SDK documentation."
 msgstr ""
 
-msgid "Superset chart"
+msgid "VantumIQP chart"
 msgstr "Explorar gráfico"
 
 #, fuzzy
-msgid "Superset docs link"
+msgid "VantumIQP docs link"
 msgstr "Explorar gráfico"
 
-msgid "Superset encountered an error while running a command."
+msgid "VantumIQP encountered an error while running a command."
 msgstr ""
 
-msgid "Superset encountered an unexpected error."
+msgid "VantumIQP encountered an unexpected error."
 msgstr ""
 
 #, fuzzy
@@ -12753,7 +12753,7 @@ msgid "The corner radius of the chart background"
 msgstr ""
 
 msgid ""
-"The country code standard that Superset should expect to find in the "
+"The country code standard that VantumIQP should expect to find in the "
 "[country] column"
 msgstr ""
 
@@ -13138,7 +13138,7 @@ msgstr ""
 
 msgid ""
 "The pointer to a physical table (or view). Keep in mind that the chart is"
-" associated to this Superset logical table, and this logical table points"
+" associated to this VantumIQP logical table, and this logical table points"
 " the physical table referenced here."
 msgstr ""
 
@@ -13343,12 +13343,12 @@ msgid ""
 "The time granularity for the visualization. This applies a date "
 "transformation to alter your time column and defines a new time "
 "granularity. The options here are defined on a per database engine basis "
-"in the Superset source code."
+"in the VantumIQP source code."
 msgstr ""
 "A granularidade temporal para a visualização. Aplica uma transformação de"
 " data para alterar a coluna de tempo e define uma nova granularidade "
 "temporal. As opções são definidas por base de dados no código-fonte do "
-"Superset."
+"VantumIQP."
 
 msgid ""
 "The time range for the visualization. All relative times, e.g. \"Last "
@@ -13746,7 +13746,7 @@ msgstr ""
 msgid "This chart has been moved to a different filter scope."
 msgstr ""
 
-msgid "This chart is managed externally, and can't be edited in Superset"
+msgid "This chart is managed externally, and can't be edited in VantumIQP"
 msgstr ""
 
 msgid "This chart might be incompatible with the filter (datasets don't match)"
@@ -13791,7 +13791,7 @@ msgid ""
 "be in %s."
 msgstr ""
 
-msgid "This dashboard is managed externally, and can't be edited in Superset"
+msgid "This dashboard is managed externally, and can't be edited in VantumIQP"
 msgstr ""
 
 msgid ""
@@ -13829,7 +13829,7 @@ msgid ""
 "Please contact your administrator for more assistance."
 msgstr ""
 
-msgid "This database is managed externally, and can't be edited in Superset"
+msgid "This database is managed externally, and can't be edited in VantumIQP"
 msgstr ""
 
 msgid ""
@@ -13837,7 +13837,7 @@ msgid ""
 "table."
 msgstr ""
 
-msgid "This dataset is managed externally, and can't be edited in Superset"
+msgid "This dataset is managed externally, and can't be edited in VantumIQP"
 msgstr ""
 
 msgid "This defines the element to be plotted on the chart"
@@ -14525,17 +14525,17 @@ msgid "Unable to load dashboard"
 msgstr "Adicionar ao novo dashboard"
 
 msgid ""
-"Unable to migrate query editor state to backend. Superset will retry "
+"Unable to migrate query editor state to backend. VantumIQP will retry "
 "later. Please contact your administrator if this problem persists."
 msgstr ""
 
 msgid ""
-"Unable to migrate query state to backend. Superset will retry later. "
+"Unable to migrate query state to backend. VantumIQP will retry later. "
 "Please contact your administrator if this problem persists."
 msgstr ""
 
 msgid ""
-"Unable to migrate table schema state to backend. Superset will retry "
+"Unable to migrate table schema state to backend. VantumIQP will retry "
 "later. Please contact your administrator if this problem persists."
 msgstr ""
 
@@ -15325,7 +15325,7 @@ msgid "When only a primary metric is provided, a categorical color scale is used
 msgstr ""
 
 msgid ""
-"When specifying SQL, the datasource acts as a view. Superset will use "
+"When specifying SQL, the datasource acts as a view. VantumIQP will use "
 "this statement as a subquery while grouping and filtering on the "
 "generated parent queries.If changes are made to your SQL query, columns "
 "in your dataset will be synced when saving the dataset."

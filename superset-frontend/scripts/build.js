@@ -23,7 +23,13 @@
 /**
  * Build packages/plugins filtered by globs
  */
-process.env.PATH = `./node_modules/.bin:${process.env.PATH}`;
+const path = require('path');
+
+const pathKey =
+  Object.keys(process.env).find(key => key.toLowerCase() === 'path') || 'PATH';
+process.env[pathKey] = `.${path.sep}node_modules${path.sep}.bin${
+  path.delimiter
+}${process.env[pathKey] || ''}`;
 
 const { spawnSync } = require('child_process');
 const fastGlob = require('fast-glob');
@@ -39,9 +45,15 @@ const META_PACKAGES = new Set(['demo', 'generator-superset']);
 
 function run(cmd, options) {
   console.log(`\n>> ${cmd}\n`);
-  const [p, ...args] = cmd.split(' ');
   const runner = spawnSync;
-  const { status } = runner(p, args, { stdio: 'inherit', ...options });
+  const { error, status } = runner(cmd, {
+    shell: true,
+    stdio: 'inherit',
+    ...options,
+  });
+  if (error) {
+    throw error;
+  }
   if (status !== 0) {
     process.exit(status);
   }
@@ -112,8 +124,7 @@ function getPackages(packagePattern, tsOnly = false) {
 let scope = getPackages(glob);
 
 console.log('--- Run babel --------');
-const babelCommand = `lerna exec --stream --concurrency 10 --scope ${scope}
-        -- babel ${BABEL_CONFIG} src --extensions ".ts,.tsx,.js,.jsx" --copy-files`;
+const babelCommand = `lerna exec --stream --concurrency 10 --scope "${scope}" -- babel ${BABEL_CONFIG} src --extensions ".ts,.tsx,.js,.jsx" --copy-files`;
 run(`${babelCommand} --out-dir lib`);
 
 console.log('--- Run babel esm ---');
@@ -125,5 +136,6 @@ run(`${babelCommand} --out-dir esm`, {
 console.log('--- Run tsc ---');
 // only run tsc for packages with ts files
 scope = getPackages(glob, true);
-run(`lerna exec --stream --concurrency 3 --scope ${scope} \
-      -- ../../scripts/tsc.sh --build`);
+const tscCommand =
+  process.platform === 'win32' ? 'tsc --build' : '../../scripts/tsc.sh --build';
+run(`lerna exec --stream --concurrency 3 --scope "${scope}" -- ${tscCommand}`);

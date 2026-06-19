@@ -23,7 +23,7 @@ under the License.
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 
-The official core package for building Apache Superset backend extensions and integrations. This package provides essential building blocks including base classes, API utilities, type definitions, and decorators for both the host application and extensions.
+The official core package for building VantumIQP backend extensions and integrations. This package provides essential building blocks including base classes, API utilities, type definitions, and decorators for both the host application and extensions.
 
 ## 📦 Installation
 

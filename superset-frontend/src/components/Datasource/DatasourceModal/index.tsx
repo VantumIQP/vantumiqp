@@ -362,7 +362,7 @@ const DatasourceModal: FunctionComponent<DatasourceModalProps> = ({
             tooltip={
               currentDatasource.is_managed_externally
                 ? t(
-                    "This dataset is managed externally, and can't be edited in Superset",
+                    "This dataset is managed externally, and can't be edited in VantumIQP",
                   )
                 : errors.length > 0
                   ? errors.join('\n')

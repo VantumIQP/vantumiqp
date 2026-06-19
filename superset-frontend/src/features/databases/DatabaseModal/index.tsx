@@ -1363,7 +1363,7 @@ const DatabaseModal: FunctionComponent<DatabaseModalProps> = ({
         tooltip={
           db?.is_managed_externally
             ? t(
-                "This database is managed externally, and can't be edited in Superset",
+                "This database is managed externally, and can't be edited in VantumIQP",
               )
             : ''
         }

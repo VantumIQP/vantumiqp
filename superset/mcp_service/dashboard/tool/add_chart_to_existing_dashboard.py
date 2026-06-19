@@ -118,7 +118,7 @@ def _match_tab_in_children(
 def _collect_tabs_groups(layout: Dict[str, Any]) -> list[list[str]]:
     """Collect all TABS groups from ROOT_ID and GRID_ID children.
 
-    Superset dashboards can place TABS under either ROOT_ID or GRID_ID
+    VantumIQP dashboards can place TABS under either ROOT_ID or GRID_ID
     depending on how the layout was constructed.
     """
     groups: list[list[str]] = []
@@ -292,7 +292,7 @@ def _ensure_layout_structure(
         if "children" not in layout["ROOT_ID"]:
             layout["ROOT_ID"]["children"] = []
         # Only add GRID_ID to ROOT_ID when TABS are not already a direct
-        # child of ROOT_ID.  Real Superset dashboards with tabs place a
+        # child of ROOT_ID. Real VantumIQP dashboards with tabs place a
         # TABS container directly under ROOT_ID (ROOT_ID → TABS → TABs).
         # Adding GRID_ID as a sibling of TABS confuses the frontend layout
         # engine and makes charts invisible.

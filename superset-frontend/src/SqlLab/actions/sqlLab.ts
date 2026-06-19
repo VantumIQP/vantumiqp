@@ -641,7 +641,7 @@ function migrateTable(
       dispatch(
         addWarningToast(
           t(
-            'Unable to migrate table schema state to backend. Superset will retry ' +
+            'Unable to migrate table schema state to backend. VantumIQP will retry ' +
               'later. Please contact your administrator if this problem persists.',
           ),
         ),
@@ -663,7 +663,7 @@ function migrateQuery(
       dispatch(
         addWarningToast(
           t(
-            'Unable to migrate query state to backend. Superset will retry later. ' +
+            'Unable to migrate query state to backend. VantumIQP will retry later. ' +
               'Please contact your administrator if this problem persists.',
           ),
         ),
@@ -721,7 +721,7 @@ export function syncQueryEditor(
         dispatch(
           addWarningToast(
             t(
-              'Unable to migrate query editor state to backend. Superset will retry ' +
+              'Unable to migrate query editor state to backend. VantumIQP will retry ' +
                 'later. Please contact your administrator if this problem persists.',
             ),
           ),

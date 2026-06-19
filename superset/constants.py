@@ -22,7 +22,7 @@ from enum import Enum
 
 from superset.utils.backports import StrEnum
 
-DEFAULT_USER_AGENT = "Apache Superset"
+DEFAULT_USER_AGENT = "VantumIQP"
 
 NULL_STRING = "<NULL>"
 EMPTY_STRING = "<empty string>"

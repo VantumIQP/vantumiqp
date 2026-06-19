@@ -346,7 +346,7 @@ export const controls = {
         'applies a date transformation to alter ' +
         'your time column and defines a new time granularity. ' +
         'The options here are defined on a per database ' +
-        'engine basis in the Superset source code.',
+        'engine basis in the VantumIQP source code.',
     ),
     mapStateToProps: (state: ControlState) => ({
       choices: state.datasource ? state.datasource.time_grain_sqla : null,

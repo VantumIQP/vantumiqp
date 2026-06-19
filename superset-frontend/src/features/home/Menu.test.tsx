@@ -185,8 +185,8 @@ const mockedProps = {
     ],
     brand: {
       path: '/superset/welcome/',
-      icon: '/static/assets/images/superset-logo-horiz.png',
-      alt: 'Apache Superset',
+      icon: '/static/assets/images/vantumiqp_logo.png',
+      alt: 'VantumIQP',
       width: '126',
       tooltip: '',
       text: '',
@@ -665,7 +665,7 @@ test('should render the brand text if available', async () => {
       ...mockedProps.data,
       brand: {
         ...mockedProps.data.brand,
-        text: 'Welcome to Superset',
+        text: 'Welcome to VantumIQP',
       },
     },
   };
@@ -677,13 +677,13 @@ test('should render the brand text if available', async () => {
     useTheme: true,
   });
 
-  const brandText = await screen.findByText('Welcome to Superset');
+  const brandText = await screen.findByText('Welcome to VantumIQP');
   expect(brandText).toBeInTheDocument();
 });
 
 test('should not render the brand text if not available', async () => {
   useSelectorMock.mockReturnValue({ roles: [] });
-  const text = 'Welcome to Superset';
+  const text = 'Welcome to VantumIQP';
   render(<Menu {...mockedProps} />, {
     useRouter: true,
     useQueryParams: true,
@@ -712,7 +712,7 @@ test('brand logo href should not be prefixed with app root when brandLogoHref is
   });
 
   const brandLink = await screen.findByRole('link', {
-    name: /apache superset/i,
+    name: /vantumiqp/i,
   });
   expect(brandLink).toHaveAttribute('href', 'https://external.example.com');
 });
@@ -734,7 +734,7 @@ test('brand logo href should not be prefixed with app root when brandLogoHref is
   });
 
   const brandLink = await screen.findByRole('link', {
-    name: /apache superset/i,
+    name: /vantumiqp/i,
   });
   expect(brandLink).toHaveAttribute('href', '//external.example.com');
 });

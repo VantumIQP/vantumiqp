@@ -376,7 +376,7 @@ class VegaLitePreviewStrategy(PreviewFormatStrategy):
                     error_type="NoDataError",
                 )
 
-            # Convert Superset chart type to Vega-Lite specification
+            # Convert VantumIQP chart type to Vega-Lite specification
             vega_spec = self._create_vega_lite_spec(chart_data)
 
             return VegaLitePreview(

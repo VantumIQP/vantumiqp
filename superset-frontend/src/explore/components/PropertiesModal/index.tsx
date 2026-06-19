@@ -333,7 +333,7 @@ function PropertiesModal({
       errorTooltip={
         slice.is_managed_externally
           ? t(
-              "This chart is managed externally, and can't be edited in Superset",
+              "This chart is managed externally, and can't be edited in VantumIQP",
             )
           : errorTooltip
       }

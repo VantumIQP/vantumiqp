@@ -38,7 +38,6 @@ const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 const parsedArgs = require('yargs').argv;
 const Visualizer = require('webpack-visualizer-plugin2');
-const getProxyConfig = require('./webpack.proxy-config');
 const packageConfig = require('./package.json');
 
 // input dir
@@ -483,14 +482,15 @@ const config = {
         },
       },
       {
-        test: /node_modules\/(@deck\.gl|@luma\.gl).*\.js$/,
+        test: /node_modules[\\/](@deck\.gl|@luma\.gl).*\.js$/,
         loader: 'imports-loader',
         options: {
           additionalCode: 'var module = module || {exports: {}};',
         },
       },
       {
-        test: /node_modules\/(geostyler-style|geostyler-qgis-parser)\/.*\.js$/,
+        test: /node_modules[\\/](geostyler-style|geostyler-qgis-parser)[\\/].*\.js$/,
+        type: 'javascript/auto',
         resolve: {
           fullySpecified: false,
         },
@@ -641,6 +641,7 @@ Object.entries(packageConfig.dependencies).forEach(([pkg, relativeDir]) => {
 console.log(''); // pure cosmetic new line
 
 if (isDevMode) {
+  const getProxyConfig = require('./webpack.proxy-config');
   let proxyConfig = getProxyConfig();
   // Set up a plugin to handle manifest updates
   config.plugins = config.plugins || [];

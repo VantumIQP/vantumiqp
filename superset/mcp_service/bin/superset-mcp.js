@@ -20,7 +20,7 @@
  */
 
 /**
- * Apache Superset MCP (Model Context Protocol) Server Runner
+ * VantumIQP MCP (Model Context Protocol) Server Runner
  *
  * OVERVIEW:
  * This Node.js wrapper script provides an npx-compatible entry point for the Superset MCP service.
@@ -76,7 +76,7 @@ const DEFAULT_HOST = process.env.MCP_HOST || '127.0.0.1';
 // Show help
 if (showHelp) {
     console.log(`
-Apache Superset MCP Server
+VantumIQP MCP Server
 
 Usage:
   Development: node superset/mcp_service/bin/superset-mcp.js [options]

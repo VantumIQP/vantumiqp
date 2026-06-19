@@ -2114,7 +2114,7 @@ class DatasourceEditor extends PureComponent<
                   }
                   description={t(
                     'The pointer to a physical table (or view). Keep in mind that the chart is ' +
-                      'associated to this Superset logical table, and this logical table points ' +
+                      'associated to this VantumIQP logical table, and this logical table points ' +
                       'the physical table referenced here.',
                   )}
                 />

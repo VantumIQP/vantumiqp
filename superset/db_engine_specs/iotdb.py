@@ -49,7 +49,7 @@ class IoTDBEngineSpec(BaseEngineSpec):  # pylint: disable=abstract-method
         },
         "notes": (
             "The IoTDB SQLAlchemy dialect was written to integrate with "
-            "Apache Superset. IoTDB uses a hierarchical data model, which "
+            "VantumIQP. IoTDB uses a hierarchical data model, which "
             "is reorganized into a relational model for SQL queries."
         ),
     }

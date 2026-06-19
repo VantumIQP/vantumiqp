@@ -56,6 +56,22 @@ export interface ShareMenuItemProps extends ComponentProps<
   [key: string]: unknown;
 }
 
+interface EmailShareHrefConfig {
+  emailSubject: string;
+  emailBody: string;
+  url: string;
+}
+
+export const buildEmailShareHref = ({
+  emailSubject,
+  emailBody,
+  url,
+}: EmailShareHrefConfig) => {
+  const encodedBody = encodeURIComponent(`${emailBody}${url}`);
+  const encodedSubject = encodeURIComponent(emailSubject);
+  return `mailto:?Subject=${encodedSubject}%20&Body=${encodedBody}`;
+};
+
 export const useShareMenuItems = (props: ShareMenuItemProps): MenuItem => {
   const {
     copyMenuItemTitle,
@@ -120,11 +136,11 @@ export const useShareMenuItems = (props: ShareMenuItemProps): MenuItem => {
 
   async function onShareByEmail() {
     try {
-      const encodedBody = encodeURIComponent(
-        `${emailBody}${await generateUrl()}`,
-      );
-      const encodedSubject = encodeURIComponent(emailSubject);
-      window.location.href = `mailto:?Subject=${encodedSubject}%20&Body=${encodedBody}`;
+      window.location.href = buildEmailShareHref({
+        emailSubject,
+        emailBody,
+        url: await generateUrl(),
+      });
     } catch (error) {
       logging.error(error);
       addDangerToast(t('Sorry, something went wrong. Try again later.'));

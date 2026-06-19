@@ -279,7 +279,7 @@ test('should support search functionality for color schemes', async () => {
     lyftColors,
     {
       id: 'supersetDefault',
-      label: 'Superset Colors',
+      label: 'VantumIQP Colors',
       group: ColorSchemeGroup.Featured,
       colors: ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728'],
     } as CategoricalScheme,

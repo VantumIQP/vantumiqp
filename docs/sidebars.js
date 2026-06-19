@@ -36,7 +36,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Using Superset',
+      label: 'Using VantumIQP',
       collapsed: false,
       items: [
         {

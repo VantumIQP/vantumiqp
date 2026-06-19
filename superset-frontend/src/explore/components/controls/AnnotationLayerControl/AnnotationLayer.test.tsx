@@ -168,14 +168,14 @@ test('triggers removeAnnotationLayer and close when remove button is clicked', a
   expect(close).toHaveBeenCalled();
 });
 
-test('fetches Superset annotation layer options', async () => {
+test('fetches VantumIQP annotation layer options', async () => {
   await waitForRender({
     annotationType: ANNOTATION_TYPES_METADATA.EVENT.value,
   });
   userEvent.click(
     screen.getByRole('combobox', { name: 'Annotation source type' }),
   );
-  userEvent.click(screen.getByText('Superset annotation'));
+  userEvent.click(screen.getByText('VantumIQP annotation'));
   expect(await screen.findByText('Annotation layer')).toBeInTheDocument();
   userEvent.click(
     screen.getByRole('combobox', { name: 'Annotation layer value' }),

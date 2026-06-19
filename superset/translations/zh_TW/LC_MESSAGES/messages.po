@@ -15,7 +15,7 @@
 # under the License.
 msgid ""
 msgstr ""
-"Project-Id-Version: Apache Superset 0.22.1\n"
+"Project-Id-Version: VantumIQP 0.22.1\n"
 "Report-Msgid-Bugs-To: bestlong168@gmail.com\n"
 "POT-Creation-Date: 2026-02-06 23:58-0800\n"
 "PO-Revision-Date: 2019-01-04 22:19+0800\n"
@@ -106,7 +106,7 @@ msgstr "詳細訊息"
 msgid " near '%(highlight)s'"
 msgstr ""
 
-msgid " source code of Superset's sandboxed parser"
+msgid " source code of VantumIQP's sandboxed parser"
 msgstr ""
 
 msgid ""
@@ -361,7 +361,7 @@ msgid ""
 "\n"
 "%(description)s\n"
 "\n"
-"<%(url)s|Explore in Superset>\n"
+"<%(url)s|Explore in VantumIQP>\n"
 "\n"
 "%(table)s\n"
 msgstr ""
@@ -2014,7 +2014,7 @@ msgstr "自定義列"
 msgid "Autosize all columns"
 msgstr "自定義列"
 
-msgid "Available Handlebars Helpers in Superset:"
+msgid "Available Handlebars Helpers in VantumIQP:"
 msgstr ""
 
 msgid "Available sorting modes:"
@@ -4169,7 +4169,7 @@ msgid "Database does not support subqueries"
 msgstr "資料庫不支持子查詢"
 
 msgid ""
-"Database driver for importing maybe not installed. Visit the Superset "
+"Database driver for importing maybe not installed. Visit the VantumIQP "
 "documentation page for installation instructions: "
 msgstr ""
 
@@ -9450,8 +9450,8 @@ msgid "Pick a name to help you identify this database."
 msgstr "選擇一個名稱來帮助您识别這個資料庫。"
 
 #, fuzzy
-msgid "Pick a nickname for how the database will display in Superset."
-msgstr "為這個資料庫選擇一個昵稱以在 Superset 中顯示"
+msgid "Pick a nickname for how the database will display in VantumIQP."
+msgstr "為這個資料庫選擇一個昵稱以在 VantumIQP 中顯示"
 
 msgid "Pick a title for you annotation."
 msgstr "為您的注释選擇一個標題"
@@ -9728,8 +9728,8 @@ msgstr "中間節點標籤在樹中的位置"
 msgid "Position of row level subtotal"
 msgstr "行級小計的位置"
 
-msgid "Powered by Apache Superset"
-msgstr "由Apache Superset提供支持"
+msgid "Powered by VantumIQP"
+msgstr "由VantumIQP提供支持"
 
 msgid "Pre-filter"
 msgstr "預過濾"
@@ -12291,24 +12291,24 @@ msgstr "旭日/太陽圖"
 msgid "Sunday"
 msgstr "星期日"
 
-msgid "Superset Chart"
-msgstr "Superset 圖表"
+msgid "VantumIQP Chart"
+msgstr "VantumIQP 圖表"
 
-msgid "Superset Embedded SDK documentation."
-msgstr "Superset 的嵌入 SDK 文檔。"
+msgid "VantumIQP Embedded SDK documentation."
+msgstr "VantumIQP 的嵌入 SDK 文檔。"
 
-msgid "Superset chart"
-msgstr "Superset 圖表"
+msgid "VantumIQP chart"
+msgstr "VantumIQP 圖表"
 
 #, fuzzy
-msgid "Superset docs link"
-msgstr "Superset 圖表"
+msgid "VantumIQP docs link"
+msgstr "VantumIQP 圖表"
 
-msgid "Superset encountered an error while running a command."
-msgstr "Superset 在執行命令時遇到了一個錯誤。"
+msgid "VantumIQP encountered an error while running a command."
+msgstr "VantumIQP 在執行命令時遇到了一個錯誤。"
 
-msgid "Superset encountered an unexpected error."
-msgstr "Superset 遇到了未知錯誤。"
+msgid "VantumIQP encountered an unexpected error."
+msgstr "VantumIQP 遇到了未知錯誤。"
 
 msgid "Supported databases"
 msgstr "已支持資料庫"
@@ -12702,9 +12702,9 @@ msgid "The corner radius of the chart background"
 msgstr ""
 
 msgid ""
-"The country code standard that Superset should expect to find in the "
+"The country code standard that VantumIQP should expect to find in the "
 "[country] column"
-msgstr "Superset 希望能够在 [國家] 欄中找到的 國家 / 地區 的標準代碼"
+msgstr "VantumIQP 希望能够在 [國家] 欄中找到的 國家 / 地區 的標準代碼"
 
 msgid "The dashboard has been saved"
 msgstr "該看板已成功保存。"
@@ -13094,7 +13094,7 @@ msgstr "像素半徑"
 
 msgid ""
 "The pointer to a physical table (or view). Keep in mind that the chart is"
-" associated to this Superset logical table, and this logical table points"
+" associated to this VantumIQP logical table, and this logical table points"
 " the physical table referenced here."
 msgstr "指向實體表（或視圖）的指针。請計住，圖表將與此逻辑表相關聯，並且此逻辑表指向此處引用的實體表。"
 
@@ -13291,8 +13291,8 @@ msgid ""
 "The time granularity for the visualization. This applies a date "
 "transformation to alter your time column and defines a new time "
 "granularity. The options here are defined on a per database engine basis "
-"in the Superset source code."
-msgstr "可視化的時間粒度。這將應用日期轉换來更改時間列，並定義新的時間粒度。這里的選項是在 Superset 源代碼中的每個資料庫引擎基礎上定義的。"
+"in the VantumIQP source code."
+msgstr "可視化的時間粒度。這將應用日期轉换來更改時間列，並定義新的時間粒度。這里的選項是在 VantumIQP 源代碼中的每個資料庫引擎基礎上定義的。"
 
 msgid ""
 "The time range for the visualization. All relative times, e.g. \"Last "
@@ -13693,7 +13693,7 @@ msgstr "此圖表將交叉篩選應用於那些數據集包含具有相同名稱
 msgid "This chart has been moved to a different filter scope."
 msgstr "此圖表已移至其他過濾器範圍内。"
 
-msgid "This chart is managed externally, and can't be edited in Superset"
+msgid "This chart is managed externally, and can't be edited in VantumIQP"
 msgstr ""
 
 msgid "This chart might be incompatible with the filter (datasets don't match)"
@@ -13739,7 +13739,7 @@ msgid ""
 "be in %s."
 msgstr "此看板當前正在强制刷新；下一次强制刷新將在 %s 内執行。"
 
-msgid "This dashboard is managed externally, and can't be edited in Superset"
+msgid "This dashboard is managed externally, and can't be edited in VantumIQP"
 msgstr ""
 
 msgid ""
@@ -13776,7 +13776,7 @@ msgid ""
 "Please contact your administrator for more assistance."
 msgstr "找不到此查詢中引用的資料庫。請與管理員聯繫以獲得進一步帮助，或重試。"
 
-msgid "This database is managed externally, and can't be edited in Superset"
+msgid "This database is managed externally, and can't be edited in VantumIQP"
 msgstr ""
 
 msgid ""
@@ -13784,7 +13784,7 @@ msgid ""
 "table."
 msgstr ""
 
-msgid "This dataset is managed externally, and can't be edited in Superset"
+msgid "This dataset is managed externally, and can't be edited in VantumIQP"
 msgstr ""
 
 msgid "This defines the element to be plotted on the chart"
@@ -14457,17 +14457,17 @@ msgid "Unable to load dashboard"
 msgstr "增加到看板"
 
 msgid ""
-"Unable to migrate query editor state to backend. Superset will retry "
+"Unable to migrate query editor state to backend. VantumIQP will retry "
 "later. Please contact your administrator if this problem persists."
 msgstr "無法將查詢編輯器狀態遷移到後端。系统將稍後重試。如果此問題仍然存在，請與管理員聯繫。"
 
 msgid ""
-"Unable to migrate query state to backend. Superset will retry later. "
+"Unable to migrate query state to backend. VantumIQP will retry later. "
 "Please contact your administrator if this problem persists."
 msgstr "無法將查詢狀態遷移到後端。系统將稍後重試。如果此問題仍然存在，請與管理員聯繫。"
 
 msgid ""
-"Unable to migrate table schema state to backend. Superset will retry "
+"Unable to migrate table schema state to backend. VantumIQP will retry "
 "later. Please contact your administrator if this problem persists."
 msgstr "無法將表結構狀態遷移到後端。系统將稍後重試。如果此問題仍然存在，請與管理員聯繫。"
 
@@ -15269,7 +15269,7 @@ msgstr "如果只提供了一個主計量指標，则使用分類色階。"
 
 #, fuzzy
 msgid ""
-"When specifying SQL, the datasource acts as a view. Superset will use "
+"When specifying SQL, the datasource acts as a view. VantumIQP will use "
 "this statement as a subquery while grouping and filtering on the "
 "generated parent queries.If changes are made to your SQL query, columns "
 "in your dataset will be synced when saving the dataset."

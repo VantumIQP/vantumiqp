@@ -11,9 +11,9 @@
     "message": "Configuration",
     "description": "The label for category Configuration in sidebar CustomSidebar"
   },
-  "sidebar.CustomSidebar.category.Using Superset": {
-    "message": "Using Superset",
-    "description": "The label for category Using Superset in sidebar CustomSidebar"
+  "sidebar.CustomSidebar.category.Using VantumIQP": {
+    "message": "Using VantumIQP",
+    "description": "The label for category Using VantumIQP in sidebar CustomSidebar"
   },
   "sidebar.CustomSidebar.category.Contributing": {
     "message": "Contributing",

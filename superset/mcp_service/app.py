@@ -62,7 +62,7 @@ _SNIPPET_CONNECT_GUIDANCE = (
 
 
 def get_default_instructions(
-    branding: str = "Apache Superset",
+    branding: str = "VantumIQP",
     disabled_tools: set[str] | None = None,
 ) -> str:
     """Get default instructions with configurable branding.
@@ -73,7 +73,7 @@ def get_default_instructions(
 
     Args:
         branding: Product name to use in instructions
-            (e.g., "ACME Analytics", "Apache Superset")
+            (e.g., "ACME Analytics", "VantumIQP")
         disabled_tools: Set of tool names to omit from the tool listing.
             When ``None`` (default) all tools are included.
 

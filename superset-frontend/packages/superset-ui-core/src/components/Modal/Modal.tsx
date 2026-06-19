@@ -17,6 +17,7 @@
  * under the License.
  */
 import { isValidElement, cloneElement, useMemo, useRef, useState } from 'react';
+import type { ComponentType } from 'react';
 import { isNil } from 'lodash';
 import { t } from '@apache-superset/core/translation';
 import { css, styled, useTheme } from '@apache-superset/core/theme';
@@ -26,6 +27,7 @@ import Draggable, {
   DraggableBounds,
   DraggableData,
   DraggableEvent,
+  DraggableProps,
 } from 'react-draggable';
 import { Icons } from '../Icons';
 import { Button } from '../Button';
@@ -39,6 +41,7 @@ const RESIZABLE_MIN_HEIGHT = MODAL_HEADER_HEIGHT + MODAL_MIN_CONTENT_HEIGHT;
 const RESIZABLE_MIN_WIDTH = '380px';
 const RESIZABLE_MAX_HEIGHT = '100vh';
 const RESIZABLE_MAX_WIDTH = '100vw';
+const DraggableComponent = Draggable as ComponentType<Partial<DraggableProps>>;
 
 export const BaseModal = (props: AntdModalProps) => (
   // Removes mask animation. Fixed in 4.6.0.
@@ -224,7 +227,7 @@ const CustomModal = ({
   draggable = false,
   resizable = false,
   resizableConfig = defaultResizableConfig(hideFooter),
-  draggableConfig,
+  draggableConfig = {},
   destroyOnHidden,
   openerRef,
   ...rest
@@ -300,6 +303,16 @@ const CustomModal = ({
     return resizableConfig;
   }, [hideFooter, resizableConfig]);
 
+  const getDraggableConfig = useMemo(
+    () =>
+      Object.fromEntries(
+        Object.entries(draggableConfig).filter(
+          ([, value]) => value !== undefined,
+        ),
+      ) as object,
+    [draggableConfig],
+  );
+
   const ModalTitle = () =>
     draggable ? (
       <div
@@ -337,11 +350,11 @@ const CustomModal = ({
       wrapProps={{ 'data-test': `${name || 'antd'}-modal`, ...wrapProps }}
       modalRender={modal =>
         resizable || draggable ? (
-          <Draggable
+          <DraggableComponent
             disabled={!draggable || dragDisabled}
-            bounds={bounds}
+            bounds={bounds ?? false}
             onStart={(event, uiData) => onDragStart(event, uiData)}
-            {...draggableConfig}
+            {...getDraggableConfig}
           >
             {resizable ? (
               <Resizable className="resizable" {...getResizableConfig}>
@@ -352,7 +365,7 @@ const CustomModal = ({
             ) : (
               <div ref={draggableRef}>{modal}</div>
             )}
-          </Draggable>
+          </DraggableComponent>
         ) : (
           modal
         )

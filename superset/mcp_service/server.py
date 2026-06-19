@@ -16,7 +16,7 @@
 # under the License.
 
 """
-MCP server for Apache Superset
+MCP server for VantumIQP
 
 Supports both single-pod (in-memory) and multi-pod (Redis) deployments.
 For multi-pod deployments, configure MCP_EVENT_STORE_CONFIG with Redis URL.

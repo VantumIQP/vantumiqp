@@ -16,9 +16,9 @@ KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations
 under the License.
 -->
-# Installing Apache Superset
+# Installing VantumIQP
 
-For comprehensive installation instructions, please see the Apache Superset documentation:
+For comprehensive installation instructions, please see the VantumIQP documentation:
 
 **[📚 Installation Guide →](https://superset.apache.org/docs/installation/installation-methods)**
 

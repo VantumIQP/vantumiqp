@@ -191,7 +191,7 @@ export const DashboardEmbedControls = ({ dashboardId, onHide }: Props) => {
         <Typography.Link href={docsUrl} target="_blank" rel="noreferrer">
           {docsDescription
             ? docsDescription()
-            : t('Superset Embedded SDK documentation.')}
+            : t('VantumIQP Embedded SDK documentation.')}
         </Typography.Link>
       </p>
       <h3>{t('Settings')}</h3>

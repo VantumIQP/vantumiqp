@@ -678,7 +678,7 @@ const PropertiesModal = ({
       errorTooltip={
         dashboardInfo?.isManagedExternally
           ? t(
-              "This dashboard is managed externally, and can't be edited in Superset",
+              "This dashboard is managed externally, and can't be edited in VantumIQP",
             )
           : errorTooltip
       }

@@ -61,7 +61,7 @@ Inline \`code\` works too!
 | Row 1    | Data     | More     |
 | Row 2    | Data     | More     |
 
-[Link to Apache Superset](https://superset.apache.org)
+[Link to VantumIQP](https://superset.apache.org)
 `,
   htmlSanitization: true,
 };
@@ -243,7 +243,7 @@ DashboardUseCases.parameters = {
   docs: {
     description: {
       story:
-        'Real-world examples of how SafeMarkdown is used in Superset dashboards for chart descriptions, data quality notes, and metric definitions.',
+        'Real-world examples of how SafeMarkdown is used in VantumIQP dashboards for chart descriptions, data quality notes, and metric definitions.',
     },
   },
 };

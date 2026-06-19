@@ -256,10 +256,10 @@ const config: Config = {
       },
     },
   }),
-  title: 'Superset',
+  title: 'VantumIQP',
   tagline:
-    'Apache Superset is a modern data exploration and visualization platform',
-  url: 'https://superset.apache.org',
+    'VantumIQP is a modern data exploration and visualization platform',
+  url: 'https://vantumiqp.com',
   baseUrl: '/',
   onBrokenLinks: 'warn',
   markdown: {
@@ -268,9 +268,9 @@ const config: Config = {
       onBrokenMarkdownLinks: 'throw',
     },
   },
-  favicon: '/img/favicon.ico',
-  organizationName: 'apache',
-  projectName: 'superset',
+  favicon: '/img/vantumiqp-favicon.png',
+  organizationName: 'Actaer',
+  projectName: 'vantumiqp',
 
   // SEO: Structured data (Organization, Software, WebSite with SearchAction)
   headTags: [
@@ -283,17 +283,17 @@ const config: Config = {
       innerHTML: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'SoftwareApplication',
-        name: 'Apache Superset',
+        name: 'VantumIQP',
         applicationCategory: 'BusinessApplication',
         operatingSystem: 'Cross-platform',
-        description: 'Apache Superset is a modern, enterprise-ready business intelligence web application for data exploration and visualization.',
-        url: 'https://superset.apache.org',
+        description: 'VantumIQP is a modern, enterprise-ready business intelligence web application for data exploration and visualization.',
+        url: 'https://vantumiqp.com',
         license: 'https://www.apache.org/licenses/LICENSE-2.0',
         author: {
           '@type': 'Organization',
-          name: 'Apache Software Foundation',
-          url: 'https://www.apache.org/',
-          logo: 'https://www.apache.org/foundation/press/kit/asf_logo.png',
+          name: 'Actaer',
+          url: 'https://actaer.com/',
+          logo: 'https://vantumiqp.com/img/vantumiqp-logo.png',
         },
         offers: {
           '@type': 'Offer',
@@ -319,13 +319,13 @@ const config: Config = {
       innerHTML: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'WebSite',
-        name: 'Apache Superset',
-        url: 'https://superset.apache.org',
+        name: 'VantumIQP',
+        url: 'https://vantumiqp.com',
         potentialAction: {
           '@type': 'SearchAction',
           target: {
             '@type': 'EntryPoint',
-            urlTemplate: 'https://superset.apache.org/search?q={search_term_string}',
+            urlTemplate: 'https://vantumiqp.com/search?q={search_term_string}',
           },
           'query-input': 'required name=search_term_string',
         },
@@ -772,7 +772,7 @@ const config: Config = {
               if (item.url.includes('/user-docs/faq')) {
                 return { ...item, priority: 0.7, changefreq: 'monthly' };
               }
-              if (item.url === 'https://superset.apache.org/') {
+              if (item.url === 'https://vantumiqp.com/') {
                 return { ...item, priority: 1.0, changefreq: 'daily' };
               }
               return item;
@@ -788,13 +788,13 @@ const config: Config = {
     metadata: [
       { name: 'keywords', content: 'data visualization, business intelligence, BI, dashboards, SQL, analytics, open source, Apache, charts, reporting' },
       { property: 'og:type', content: 'website' },
-      { property: 'og:site_name', content: 'Apache Superset' },
-      { property: 'og:image', content: 'https://superset.apache.org/img/superset-og-image.png' },
+      { property: 'og:site_name', content: 'VantumIQP' },
+      { property: 'og:image', content: 'https://vantumiqp.com/img/vantumiqp-logo.png' },
       { property: 'og:image:width', content: '1200' },
       { property: 'og:image:height', content: '630' },
       { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:image', content: 'https://superset.apache.org/img/superset-og-image.png' },
-      { name: 'twitter:site', content: '@ApacheSuperset' },
+      { name: 'twitter:image', content: 'https://vantumiqp.com/img/vantumiqp-logo.png' },
+      { name: 'twitter:site', content: '@VantumIQP' },
     ],
     colorMode: {
       defaultMode: 'dark',
@@ -815,9 +815,9 @@ const config: Config = {
     },
     navbar: {
       logo: {
-        alt: 'Superset Logo',
-        src: '/img/superset-logo-horiz.svg',
-        srcDark: '/img/superset-logo-horiz-dark.svg',
+        alt: 'VantumIQP Logo',
+        src: '/img/vantumiqp-logo.png',
+        srcDark: '/img/vantumiqp-logo.png',
       },
       items: [
         // Users docs - mirrors sidebar structure
@@ -837,7 +837,7 @@ const config: Config = {
               to: '/user-docs/quickstart',
             },
             {
-              label: 'Using Superset',
+              label: 'Using VantumIQP',
               to: '/user-docs/using-superset/creating-your-first-dashboard',
               activeBaseRegex: '^/user-docs/using-superset/',
             },
@@ -914,7 +914,7 @@ const config: Config = {
           <p>Copyright © ${new Date().getFullYear()},
           The <a href="https://www.apache.org/" target="_blank" rel="noreferrer">Apache Software Foundation</a>,
           Licensed under the Apache <a href="https://apache.org/licenses/LICENSE-2.0" target="_blank" rel="noreferrer">License</a>.</p>
-          <p><small>Apache Superset, Apache, Superset, the Superset logo, and the Apache feather logo are either registered trademarks or trademarks of The Apache Software Foundation. All other products or name brands are trademarks of their respective holders, including The Apache Software Foundation.
+          <p><small>Apache, Apache Superset, Superset, the Superset logo, and the Apache feather logo are either registered trademarks or trademarks of The Apache Software Foundation. VantumIQP and other product names are trademarks of their respective holders.
           <a href="https://www.apache.org/" target="_blank">Apache Software Foundation</a> resources</small></p>
           <img class="footer__divider" src="/img/community/line.png" alt="Divider" />
           <p>
@@ -953,20 +953,20 @@ const config: Config = {
       src: 'https://widget.kapa.ai/kapa-widget.bundle.js',
       async: true,
       'data-website-id': 'c6a8a8b8-3127-48f9-97a7-51e9e10d20d0',
-      'data-project-name': 'Apache Superset',
+      'data-project-name': 'VantumIQP',
       'data-project-color': '#FFFFFF',
       'data-project-logo':
-        'https://superset.apache.org/img/superset-logo-icon-only.png',
+        'https://vantumiqp.com/img/vantumiqp-logo.png',
       'data-modal-override-open-id': 'ask-ai-input',
       'data-modal-override-open-class': 'search-input',
       'data-modal-disclaimer':
-        'This is a custom LLM for Apache Superset with access to all [documentation](superset.apache.org/docs/intro/), [GitHub Open Issues, PRs and READMEs](github.com/apache/superset).&#10;&#10;Companies deploy assistants like this ([built by kapa.ai](https://kapa.ai)) on docs via [website widget](https://docs.kapa.ai/integrations/website-widget) (Docker, Reddit), in [support forms](https://docs.kapa.ai/integrations/support-form-deflector) for ticket deflection (Monday.com, Mapbox), or as [Slack bots](https://docs.kapa.ai/integrations/slack-bot) with private sources.',
+        'This is a custom LLM for VantumIQP with access to product documentation.&#10;&#10;Companies deploy assistants like this ([built by kapa.ai](https://kapa.ai)) on docs via [website widget](https://docs.kapa.ai/integrations/website-widget) (Docker, Reddit), in [support forms](https://docs.kapa.ai/integrations/support-form-deflector) for ticket deflection (Monday.com, Mapbox), or as [Slack bots](https://docs.kapa.ai/integrations/slack-bot) with private sources.',
       'data-modal-example-questions':
-        'How do I install Superset?,How can I contribute to Superset?',
+        'How do I install VantumIQP?,How can I configure VantumIQP?',
       'data-button-text-color': 'rgb(81,166,197)',
       'data-modal-header-bg-color': '#ffffff',
       'data-modal-title-color': 'rgb(81,166,197)',
-      'data-modal-title': 'Apache Superset AI',
+      'data-modal-title': 'VantumIQP AI',
       'data-modal-disclaimer-text-color': '#000000',
       'data-consent-required': 'true',
       'data-consent-screen-disclaimer':

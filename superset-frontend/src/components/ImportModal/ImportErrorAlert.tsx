@@ -46,7 +46,7 @@ export const ImportErrorAlert: FunctionComponent<IProps> = ({
         <>
           <br />
           {t(
-            'Database driver for importing maybe not installed. Visit the Superset documentation page for installation instructions: ',
+            'Database driver for importing maybe not installed. Visit the VantumIQP documentation page for installation instructions: ',
           )}
           <a
             href={DOCUMENTATION_LINK}

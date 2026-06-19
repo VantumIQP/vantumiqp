@@ -407,7 +407,7 @@ function ExploreViewContainer(props: ExploreViewContainerProps) {
         originalTitle ||
         theme?.brandAppName ||
         theme?.brandLogoAlt ||
-        'Superset';
+        'VantumIQP';
     },
     [originalTitle, theme?.brandAppName, theme?.brandLogoAlt],
   );

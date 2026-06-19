@@ -244,7 +244,7 @@ export const DashboardPage: FC<PageProps> = ({ idOrSlug }: PageProps) => {
         originalTitle ||
         theme?.brandAppName ||
         theme?.brandLogoAlt ||
-        'Superset';
+        'VantumIQP';
     },
     [originalTitle, theme?.brandAppName, theme?.brandLogoAlt],
   );

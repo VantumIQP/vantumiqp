@@ -18,7 +18,7 @@
  */
 
 /**
- * Apache Superset MCP Server
+ * VantumIQP MCP Server
  *
  * Entry point for the MCP server when used as a Node.js module.
  */

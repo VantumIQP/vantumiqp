@@ -1,7 +1,7 @@
 {
   "name": "superset-websocket",
   "version": "0.0.1",
-  "description": "Websocket sidecar application for Superset",
+  "description": "Websocket sidecar application for VantumIQP",
   "main": "index.js",
   "scripts": {
     "start": "node dist/index.js start",

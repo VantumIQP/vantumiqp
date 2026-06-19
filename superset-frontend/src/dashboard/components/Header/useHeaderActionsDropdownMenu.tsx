@@ -127,7 +127,7 @@ export const useHeaderActionsMenu = ({
   );
 
   const emailSubject = useMemo(
-    () => `${t('Superset dashboard')} ${dashboardTitle}`,
+    () => `${t('VantumIQP dashboard')} ${dashboardTitle}`,
     [dashboardTitle],
   );
 
