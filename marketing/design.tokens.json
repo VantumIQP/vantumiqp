@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "status": "draft",
+  "owner_approval_status": "not-reviewed",
+  "colors": {
+    "app_primary": {
+      "value": "#2893B3",
+      "evidence_status": "verified",
+      "source": "superset/config.py THEME_DEFAULT.token.colorPrimary"
+    },
+    "docs_primary": {
+      "value": "#20a7c9",
+      "evidence_status": "verified",
+      "source": "docs/src/styles/custom.css --ifm-color-primary"
+    },
+    "docs_primary_gradient_end": {
+      "value": "#0c8fae",
+      "evidence_status": "verified",
+      "source": "docs/src/styles/main.css .default-button-theme"
+    },
+    "docs_dark_background": {
+      "value": "#173036",
+      "evidence_status": "verified",
+      "source": "docs/src/styles/custom.css --ifm-footer-background-color"
+    },
+    "invalid_docs_token": {
+      "value": "#t",
+      "evidence_status": "conflicting",
+      "source": "docs/src/styles/custom.css --ifm-color-primary-darker",
+      "note": "Malformed CSS token; do not use in rendered assets."
+    }
+  },
+  "typography": {
+    "docs_primary_font": {
+      "value": "Roboto",
+      "evidence_status": "verified",
+      "source": "docs/src/styles/custom.css @font-face and --ifm-font-family-base"
+    },
+    "app_theme_font": {
+      "value": null,
+      "evidence_status": "missing",
+      "source": null
+    },
+    "fallbacks": ["Arial", "Helvetica", "sans-serif"]
+  },
+  "logos": [
+    {
+      "asset_id": "ASSET-LOGO-APP",
+      "path": "superset-frontend/src/assets/images/vantumiqp_logo.png",
+      "evidence_status": "verified"
+    }
+  ],
+  "radii": {
+    "docs_button_radius": {
+      "value": "10px",
+      "evidence_status": "verified",
+      "source": "docs/src/styles/main.css"
+    }
+  },
+  "spacing": {},
+  "notes": [
+    "Treat all launch visual choices as draft until owner-approved.",
+    "Docs and app primary colors differ; choose one launch palette during visual review."
+  ]
+}

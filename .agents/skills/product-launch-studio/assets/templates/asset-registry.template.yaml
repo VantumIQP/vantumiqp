@@ -1,0 +1,11 @@
+# Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.
+schema_version: 1
+assets:
+  - asset_id: "ASSET-TODO-001"
+    path: null
+    asset_type: "missing"
+    status: "missing"
+    provenance: "missing"
+    license: "missing"
+    owner_approval_status: "not-reviewed"
+    notes: "Replace or remove this placeholder before rendering."

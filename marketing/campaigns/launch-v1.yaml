@@ -1,0 +1,63 @@
+# Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.
+schema_version: 1
+campaign_id: "launch-v1"
+status: "awaiting-foundation-approval"
+campaign_type: "launch"
+product_id: "vantumiqp"
+locale: "en"
+target_audience_ids: ["AUD-DATA-TEAM", "AUD-ENGINEERING-OWNER"]
+primary_audience_id: "AUD-DATA-TEAM"
+goal: "Prepare a factual, editable, reviewable first launch package for VantumIQP."
+launch_angle: "repository-grounded BI and data exploration launch"
+launch_narrative: "Draft only: VantumIQP presents a Superset-derived analytics product surface with dashboards, charts, datasets, database management, and SQL Lab. Final narrative requires owner approval and live app screenshots."
+primary_cta: "Get Started"
+secondary_cta: "Browse User Docs"
+selected_channels: ["linkedin", "product-hunt", "reddit", "hacker-news", "website"]
+selected_asset_types: ["linkedin-posts", "linkedin-carousel", "product-hunt-gallery", "single-image-social", "demo-video-storyboard", "website-copy"]
+approved_claim_ids: ["CLAIM-001", "CLAIM-002", "CLAIM-003"]
+prohibited_claims: ["CLAIM-008"]
+approved_assets: []
+visual_direction: "Draft: use repository brand logo, app primary color, restrained BI/product visuals, and replaceable screenshots after live capture."
+target_aspect_ratios: ["1:1", "4:5", "16:9", "9:16"]
+target_durations: ["15s", "30s", "60s"]
+platform_assumptions:
+  - "Platform rules are unverified and must be checked before publication."
+  - "No content may be posted automatically."
+current_platform_rule_verification_status: "unverified"
+allow_provisional_claims: false
+claim_qualification_policy: "Preserve claim qualifications exactly in final publication copy."
+owner_approvals:
+  product_truth: false
+  claims: false
+  audience: false
+  campaign_angle: false
+  visuals: false
+  platform_rules: false
+open_questions:
+  - question: "What is the canonical public URL for VantumIQP?"
+    why_it_matters: "Needed for website, Product Hunt, LinkedIn, Reddit, and HN CTAs."
+    blocks_generation: false
+    blocks_rendering: false
+    blocks_publication: true
+  - question: "Which claims may be owner-approved for launch beyond the route/config facts?"
+    why_it_matters: "Final copy cannot use unverified inherited marketing claims."
+    blocks_generation: true
+    blocks_rendering: true
+    blocks_publication: true
+  - question: "Should inherited Superset community/social-proof copy be removed or rewritten for VantumIQP?"
+    why_it_matters: "Current docs contain social-proof copy that is not verified for VantumIQP."
+    blocks_generation: false
+    blocks_rendering: false
+    blocks_publication: true
+  - question: "Which screenshots or demo data should be used for launch visuals?"
+    why_it_matters: "Editable carousel and Product Hunt gallery assets require approved visual evidence."
+    blocks_generation: false
+    blocks_rendering: true
+    blocks_publication: true
+due_date_information:
+  status: "missing"
+  date: null
+review_history:
+  - date: "2026-06-19"
+    actor: "codex"
+    note: "Initial repository-grounded bootstrap created. No final social posts or rendered assets generated."

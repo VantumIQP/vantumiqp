@@ -1,0 +1,42 @@
+# Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.
+schema_version: 1
+campaign_id: "launch-v1"
+status: "draft"
+campaign_type: "launch"
+product_id: "product-todo"
+locale: "en"
+target_audience_ids: []
+primary_audience_id: null
+goal: "TODO: define campaign goal."
+launch_angle: "TODO: define launch angle."
+launch_narrative: "TODO: define launch narrative after foundation approval."
+primary_cta: "TODO"
+secondary_cta: "TODO"
+selected_channels: []
+selected_asset_types: []
+approved_claim_ids: []
+prohibited_claims: []
+approved_assets: []
+visual_direction: "TODO: define after design token review."
+target_aspect_ratios: []
+target_durations: []
+platform_assumptions: []
+current_platform_rule_verification_status: "unverified"
+allow_provisional_claims: false
+claim_qualification_policy: "Preserve qualifications exactly."
+owner_approvals:
+  product_truth: false
+  claims: false
+  audience: false
+  campaign_angle: false
+  visuals: false
+  platform_rules: false
+open_questions:
+  - question: "TODO: What product facts are owner-approved?"
+    blocks_generation: true
+    blocks_rendering: true
+    blocks_publication: true
+due_date_information:
+  status: "missing"
+  date: null
+review_history: []

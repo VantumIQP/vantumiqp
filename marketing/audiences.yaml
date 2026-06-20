@@ -1,0 +1,33 @@
+# Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.
+schema_version: 1
+audiences:
+  - audience_id: "AUD-DATA-TEAM"
+    role_or_segment: "data team evaluating BI and analytics tooling"
+    market: "inferred: organizations with SQL-accessible data"
+    locale: "en"
+    context: "Needs to explore, model, visualize, and share data without building a custom analytics UI."
+    job_to_be_done: "Connect data, query it, turn it into charts, and publish dashboards."
+    painful_current_situation: "Data exploration is split across SQL clients, spreadsheets, and custom dashboards."
+    desired_outcome: "A single web app for SQL exploration, charting, dashboards, and governed sharing."
+    common_alternatives: ["proprietary BI tools", "SQL workbenches", "custom dashboards"]
+    objections: ["setup complexity", "database driver support", "permissions model", "proof of production readiness"]
+    buying_or_adoption_trigger: "Need a self-hostable or customizable analytics surface."
+    required_technical_depth: "medium"
+    preferred_proof: ["screenshots", "supported workflow demo", "database support evidence", "security/admin surfaces"]
+    unsuitable_messages: ["generic hype", "unsupported social proof", "claims that every database works"]
+    owner_approval_status: "not-reviewed"
+  - audience_id: "AUD-ENGINEERING-OWNER"
+    role_or_segment: "solo engineer or technical owner launching the product"
+    market: "product launch execution"
+    locale: "en"
+    context: "Needs a factual, editable launch package without inventing claims."
+    job_to_be_done: "Prepare launch foundations, claims, content, visuals, and QA from the repository."
+    painful_current_situation: "Marketing drafts can drift away from what the product actually does."
+    desired_outcome: "A reviewable launch package with traceable claims and editable source assets."
+    common_alternatives: ["manual copywriting", "one-off design files", "generic launch checklists"]
+    objections: ["too much process", "not enough owner-approved facts", "missing live screenshots"]
+    buying_or_adoption_trigger: "Preparing first public launch or relaunch."
+    required_technical_depth: "high"
+    preferred_proof: ["claim map", "repository inspection", "QA checklist", "editable source strategy"]
+    unsuitable_messages: ["automated publishing", "fake engagement", "unreviewed founder voice"]
+    owner_approval_status: "not-reviewed"
