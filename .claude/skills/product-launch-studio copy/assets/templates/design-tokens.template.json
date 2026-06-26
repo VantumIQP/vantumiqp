@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "status": "draft",
+  "owner_approval_status": "not-reviewed",
+  "colors": {
+    "primary": {
+      "value": null,
+      "evidence_status": "missing",
+      "source": null
+    },
+    "secondary": {
+      "value": null,
+      "evidence_status": "missing",
+      "source": null
+    },
+    "background": {
+      "value": null,
+      "evidence_status": "missing",
+      "source": null
+    },
+    "text": {
+      "value": null,
+      "evidence_status": "missing",
+      "source": null
+    }
+  },
+  "typography": {
+    "primary_font": {
+      "value": null,
+      "evidence_status": "missing",
+      "source": null
+    },
+    "fallbacks": []
+  },
+  "logos": [],
+  "radii": {},
+  "spacing": {},
+  "notes": [
+    "Treat tokens as inferred until owner-approved."
+  ]
+}

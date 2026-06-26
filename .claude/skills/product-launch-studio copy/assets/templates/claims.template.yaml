@@ -1,0 +1,25 @@
+# Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.
+schema_version: 1
+claims:
+  - claim_id: "CLAIM-TODO-001"
+    exact_approved_wording: "TODO: replace with exact claim wording or remove this placeholder."
+    locale: "en"
+    status: "unverified"
+    claim_type: "capability"
+    intended_audience: "missing"
+    allowed_channels: []
+    supporting_evidence: null
+    source_file: null
+    source_route: null
+    source_test: null
+    screenshot: null
+    owner_statement: null
+    official_url: null
+    evidence_strength: "missing"
+    scope: "missing"
+    qualifications: "TODO: preserve any qualifications."
+    expiration_or_reverification: "before-publication"
+    last_verification_date: null
+    owner_approval_status: "not-reviewed"
+    notes: "Placeholder claim must not be used in final content."
+    prohibited_stronger_variants: []

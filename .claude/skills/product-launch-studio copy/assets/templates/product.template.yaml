@@ -1,0 +1,38 @@
+# Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.
+schema_version: 1
+product_id: "product-todo"
+product_name: "Product TODO"
+product_category: "missing"
+product_status: "draft"
+target_market: "missing"
+primary_locale: "en"
+supported_locales: ["en"]
+canonical_url: null
+one_line_description: "TODO: describe the product in one factual sentence."
+primary_problem: "TODO: state the problem without unsupported scale claims."
+desired_outcome: "TODO: state the customer outcome."
+target_audiences: []
+jobs_to_be_done: []
+existing_alternatives: []
+differentiators: []
+supported_workflows: []
+notable_capabilities: []
+limitations:
+  - "TODO: confirm known limitations before launch."
+deployment_assumptions:
+  status: "missing"
+  notes: "TODO: document hosting, local, cloud, or self-managed assumptions."
+pricing_facts:
+  status: "missing"
+  notes: "TODO: document pricing only from approved facts."
+primary_cta:
+  label: "TODO"
+  destination: null
+  evidence_status: "missing"
+secondary_cta:
+  label: "TODO"
+  destination: null
+  evidence_status: "missing"
+evidence_references: []
+owner_approval_status: "not-reviewed"
+last_reviewed_date: null

@@ -1,0 +1,18 @@
+# Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.
+schema_version: 1
+audiences:
+  - audience_id: "AUD-TODO-001"
+    role_or_segment: "TODO: define a specific audience."
+    market: "missing"
+    locale: "en"
+    context: "missing"
+    job_to_be_done: "missing"
+    painful_current_situation: "missing"
+    desired_outcome: "missing"
+    common_alternatives: []
+    objections: []
+    buying_or_adoption_trigger: "missing"
+    required_technical_depth: "missing"
+    preferred_proof: []
+    unsuitable_messages: []
+    owner_approval_status: "not-reviewed"
