@@ -236,6 +236,7 @@ composition when video implementation is requested.
 ]);
 
 const templateCopies = new Map([
+  ['intake.yaml', 'intake.template.yaml'],
   ['product.yaml', 'product.template.yaml'],
   ['claims.yaml', 'claims.template.yaml'],
   ['audiences.yaml', 'audiences.template.yaml'],

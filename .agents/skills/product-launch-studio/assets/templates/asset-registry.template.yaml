@@ -5,7 +5,15 @@ assets:
     path: null
     asset_type: "missing"
     status: "missing"
+    discovered_from: "manual"
+    asset_root: null
     provenance: "missing"
+    provenance_status: "unknown"
     license: "missing"
+    publication_safety: "unsafe"
+    draft_allowed: false
+    final_allowed: false
+    contains_sensitive_info: "unknown"
+    vector_editable: false
     owner_approval_status: "not-reviewed"
     notes: "Replace or remove this placeholder before rendering."

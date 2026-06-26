@@ -22,6 +22,16 @@ target_aspect_ratios: []
 target_durations: []
 platform_assumptions: []
 current_platform_rule_verification_status: "unverified"
+# Control and intake context (see references/autopilot.md and references/intake.md).
+control_mode: "checkpoint"
+run_preset: null
+product_url: "none"
+marketing_site_url: "none"
+asset_roots: []
+output_intensity: "standard"
+auto_discovery: false
+assumptions: []
+owner_review_items: []
 allow_provisional_claims: false
 claim_qualification_policy: "Preserve qualifications exactly."
 owner_approvals:

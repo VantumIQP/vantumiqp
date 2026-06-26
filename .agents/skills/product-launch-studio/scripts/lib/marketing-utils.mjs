@@ -288,6 +288,66 @@ export function collectIds(items, key) {
   return ids;
 }
 
+export const CONTROL_MODES = new Set(['autopilot', 'checkpoint', 'ask']);
+
+export const RUN_PRESETS = new Set([
+  'autopilot-launch-draft',
+  'autopilot-content-only',
+  'autopilot-static-assets',
+  'autopilot-video-plan',
+  'autopilot-video-render',
+]);
+
+export const OUTPUT_INTENSITIES = new Set(['minimal', 'standard', 'full']);
+
+const URL_SENTINELS = new Set(['', 'none', 'none yet', 'same', 'tbd', 'todo']);
+
+export function isSentinelUrl(value) {
+  if (value == null) {
+    return true;
+  }
+  return URL_SENTINELS.has(String(value).trim().toLowerCase());
+}
+
+export function looksLikeUrl(value) {
+  const text = String(value).trim();
+  if (/^https?:\/\/\S+$/i.test(text)) {
+    return true;
+  }
+  return /^(localhost|127\.0\.0\.1|0\.0\.0\.0|\[::1\])(:\d+)?(\/\S*)?$/i.test(text);
+}
+
+export function isLocalAssetRoot(value) {
+  if (value == null) {
+    return false;
+  }
+  const text = String(value).trim();
+  const lower = text.toLowerCase();
+  if (!text || lower === 'auto-discover' || lower === 'none') {
+    return false;
+  }
+  return !/^https?:\/\//i.test(text);
+}
+
+export function collectFlagValues(argv, name) {
+  const flag = `--${name}`;
+  const prefix = `${flag}=`;
+  const values = [];
+  for (let index = 0; index < argv.length; index += 1) {
+    const token = argv[index];
+    if (token === flag) {
+      const next = argv[index + 1];
+      if (next && !next.startsWith('--')) {
+        values.push(next);
+        index += 1;
+      }
+    } else if (token.startsWith(prefix)) {
+      values.push(token.slice(prefix.length));
+    }
+  }
+  return values;
+}
+
 export function reportAndExit(errors, warnings = []) {
   for (const warning of warnings) {
     console.warn(`[warn] ${warning}`);

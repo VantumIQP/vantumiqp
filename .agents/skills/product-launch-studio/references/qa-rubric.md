@@ -31,3 +31,19 @@ preview consistency, and asset provenance.
 Produce blocking errors, warnings, review items, commands run, outputs
 reviewed, and items requiring owner approval. Do not claim visual review or
 full video review unless actually performed.
+
+## Control-Mode Reporting
+
+QA rules do not change by control mode, but how findings are surfaced does (see
+`autopilot.md`).
+
+- In **autopilot**, report assumptions, inferred/unverified claims, and unknown-
+  provenance assets compactly in a single owner review list instead of
+  interrupting throughout the run.
+- Flag every autopilot-used asset that has unknown provenance; such assets may
+  appear only in drafts, never in final outputs.
+- Never mark content `approved-for-publication` in autopilot; the highest status
+  QA may certify is `ready-for-owner-review`.
+- Still block on the same failures in every mode: unsupported claims, altered
+  claim wording, fabricated metrics/testimonials/customers, sensitive-data
+  exposure, and publication or engagement automation.

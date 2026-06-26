@@ -17,3 +17,9 @@ Do not create fake urgency, fake participation, or hidden sponsorship.
 
 If rules are unknown, create conservative drafts and mark platform readiness
 as review-blocked.
+
+In autopilot, do not skip this step: still verify official platform rules when
+network access allows, or record the platform-rule uncertainty explicitly in
+`marketing/research/platform-rules.md` and the owner review list. Autopilot may
+continue with conservative drafts, but unverified platform rules remain a
+review-blocking item and must never be presented as confirmed.

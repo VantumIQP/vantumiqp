@@ -23,3 +23,13 @@ Prefer real product interaction recordings over fabricated UI animation.
 
 Never capture credentials, API keys, tokens, private customer data, unrelated
 tabs, notifications, bookmarks, passwords, or local-machine private details.
+
+## Autopilot And Video
+
+Autopilot may prepare the full video **plan**: user story, proven claims,
+storyboard, shot list, capture plan, and Remotion manifest (preset
+`autopilot-video-plan`). Autopilot may also render (preset
+`autopilot-video-render`) only when the data is safe to show and Remotion is
+ready. Installing new dependencies (including adding Remotion) or performing any
+sensitive capture requires explicit permission unless the owner already approved
+it. See `remotion-workflow.md`.

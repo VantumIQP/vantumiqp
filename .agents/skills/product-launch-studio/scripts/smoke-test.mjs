@@ -167,6 +167,11 @@ claim_qualification_policy: "Preserve qualifications verbatim."
   run('validate-svg.mjs', ['--svg', svgPath, '--width', '1080', '--height', '1080', '--groups', 'bg,content,cta']);
   run('validate-editability.mjs', ['--repo', tempRoot, '--manifest', carouselPath]);
 
+  run('inspect-intake.mjs', ['--repo', tempRoot]);
+  run('inspect-intake.mjs', ['--help']);
+  run('inspect-assets.mjs', ['--repo', tempRoot, '--auto-discover', '--dry-run']);
+  run('inspect-assets.mjs', ['--help']);
+
   const badManifestPath = path.join(tempRoot, 'marketing', 'manifests', 'bad.json');
   writeText(badManifestPath, '{"schema_version":1}\n');
   expectFailure('validate-content-manifest.mjs', ['--repo', tempRoot, '--manifest', badManifestPath]);
@@ -174,6 +179,21 @@ claim_qualification_policy: "Preserve qualifications verbatim."
   const badSvgPath = path.join(tempRoot, 'marketing', 'assets', 'vectors', 'Bad Slide.svg');
   writeText(badSvgPath, '<svg><script>alert(1)</script></svg>\n');
   expectFailure('validate-svg.mjs', ['--svg', badSvgPath]);
+
+  writeText(
+    path.join(tempRoot, 'marketing', 'intake.yaml'),
+    `# Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.
+schema_version: 1
+control_mode: "warp-speed"
+run_preset: "not-a-preset"
+product_url: "none"
+marketing_site_url: "none"
+asset_roots:
+  - "auto-discover"
+output_intensity: "standard"
+`,
+  );
+  expectFailure('validate-workspace.mjs', ['--repo', tempRoot]);
 
   console.log('[ok] smoke test passed');
 } finally {

@@ -1,0 +1,61 @@
+# Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.
+#
+# Initial intake for product-launch-studio.
+# The skill reads this file before running the launch workflow and only asks for
+# missing critical fields. This file is never overwritten silently: edit it by
+# hand, or let the skill fill gaps with recorded assumptions.
+schema_version: 1
+
+# control_mode - how much the skill should interrupt you.
+#   autopilot  : conservative decisions, one intake batch, owner review list at end
+#   checkpoint : work in phases, stop only at major approval gates (default)
+#   ask        : ask before each important decision
+control_mode: "checkpoint"
+
+# run_preset - optional named shortcut combining operating + control modes.
+# One of: autopilot-launch-draft, autopilot-content-only, autopilot-static-assets,
+#         autopilot-video-plan, autopilot-video-render. Use null for none.
+run_preset: null
+
+# product_url - production, staging, or local product URL.
+# Use a real URL, or one of the sentinels: "none", "none yet".
+product_url: "none"
+
+# marketing_site_url - landing page, marketing site, docs, waitlist, request-demo,
+# or public launch page. Use a real URL, "same" (same as product_url), or "none".
+marketing_site_url: "none"
+
+# asset_roots - one or more folders to scan for existing assets.
+# Use local paths, or the single value "auto-discover". Multiple roots allowed.
+# Examples: ./public, ./marketing/assets/approved, ../brand-assets
+asset_roots:
+  - "auto-discover"
+
+# auto_discover - when true, discover likely URLs and asset folders from the repo.
+auto_discover: true
+
+# primary_goal - the main outcome this launch should drive. One of:
+#   demo-requests, waitlist-signups, product-hunt-traffic, beta-users,
+#   feedback, first-paid-customers, credibility-content, other
+primary_goal: "feedback"
+
+# target_channels - where the launch will run. Use specific channels or "default".
+# Examples: linkedin, product-hunt, hacker-news, reddit, website, demo-video
+target_channels:
+  - "default"
+
+# locale - preferred language. One of: en, sr, both, infer
+locale: "infer"
+
+# output_intensity - how much to produce. One of: minimal, standard, full
+output_intensity: "standard"
+
+# assumptions - conservative assumptions recorded during intake (for owner review).
+assumptions: []
+
+# inspection - set by the skill, not the owner. Tracks whether URLs were inspected.
+# Each *_inspected value is one of: not-performed, live, skipped, unavailable.
+inspection:
+  product_url_inspected: "not-performed"
+  marketing_site_url_inspected: "not-performed"
+  date: null
